@@ -1,0 +1,2213 @@
+0  *ast.File {
+ 1  .  Package: src/rulesConfig.go:1:1
+ 2  .  Name: *ast.Ident {
+ 3  .  .  NamePos: src/rulesConfig.go:1:9
+ 4  .  .  Name: "conf"
+ 5  .  }
+ 6  .  Decls: []ast.Decl (len = 12) {
+ 7  .  .  0: *ast.GenDecl {
+ 8  .  .  .  TokPos: src/rulesConfig.go:3:1
+ 9  .  .  .  Tok: import
+10  .  .  .  Lparen: src/rulesConfig.go:3:8
+11  .  .  .  Specs: []ast.Spec (len = 6) {
+12  .  .  .  .  0: *ast.ImportSpec {
+13  .  .  .  .  .  Path: *ast.BasicLit {
+14  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:4:2
+15  .  .  .  .  .  .  Kind: STRING
+16  .  .  .  .  .  .  Value: "\"encoding/json\""
+17  .  .  .  .  .  }
+18  .  .  .  .  .  EndPos: -
+19  .  .  .  .  }
+20  .  .  .  .  1: *ast.ImportSpec {
+21  .  .  .  .  .  Path: *ast.BasicLit {
+22  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:5:2
+23  .  .  .  .  .  .  Kind: STRING
+24  .  .  .  .  .  .  Value: "\"errors\""
+25  .  .  .  .  .  }
+26  .  .  .  .  .  EndPos: -
+27  .  .  .  .  }
+28  .  .  .  .  2: *ast.ImportSpec {
+29  .  .  .  .  .  Path: *ast.BasicLit {
+30  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:6:2
+31  .  .  .  .  .  .  Kind: STRING
+32  .  .  .  .  .  .  Value: "\"fmt\""
+33  .  .  .  .  .  }
+34  .  .  .  .  .  EndPos: -
+35  .  .  .  .  }
+36  .  .  .  .  3: *ast.ImportSpec {
+37  .  .  .  .  .  Path: *ast.BasicLit {
+38  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:7:2
+39  .  .  .  .  .  .  Kind: STRING
+40  .  .  .  .  .  .  Value: "\"io/ioutil\""
+41  .  .  .  .  .  }
+42  .  .  .  .  .  EndPos: -
+43  .  .  .  .  }
+44  .  .  .  .  4: *ast.ImportSpec {
+45  .  .  .  .  .  Path: *ast.BasicLit {
+46  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:8:2
+47  .  .  .  .  .  .  Kind: STRING
+48  .  .  .  .  .  .  Value: "\"omr/api/conf\""
+49  .  .  .  .  .  }
+50  .  .  .  .  .  EndPos: -
+51  .  .  .  .  }
+52  .  .  .  .  5: *ast.ImportSpec {
+53  .  .  .  .  .  Path: *ast.BasicLit {
+54  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:9:2
+55  .  .  .  .  .  .  Kind: STRING
+56  .  .  .  .  .  .  Value: "\"os\""
+57  .  .  .  .  .  }
+58  .  .  .  .  .  EndPos: -
+59  .  .  .  .  }
+60  .  .  .  }
+61  .  .  .  Rparen: src/rulesConfig.go:10:1
+62  .  .  }
+63  .  .  1: *ast.GenDecl {
+64  .  .  .  TokPos: src/rulesConfig.go:12:1
+65  .  .  .  Tok: type
+66  .  .  .  Lparen: -
+67  .  .  .  Specs: []ast.Spec (len = 1) {
+68  .  .  .  .  0: *ast.TypeSpec {
+69  .  .  .  .  .  Name: *ast.Ident {
+70  .  .  .  .  .  .  NamePos: src/rulesConfig.go:12:6
+71  .  .  .  .  .  .  Name: "RuleScenarioCondition"
+72  .  .  .  .  .  .  Obj: *ast.Object {
+73  .  .  .  .  .  .  .  Kind: type
+74  .  .  .  .  .  .  .  Name: "RuleScenarioCondition"
+75  .  .  .  .  .  .  .  Decl: *(obj @ 68)
+76  .  .  .  .  .  .  }
+77  .  .  .  .  .  }
+78  .  .  .  .  .  Type: *ast.StructType {
+79  .  .  .  .  .  .  Struct: src/rulesConfig.go:12:28
+80  .  .  .  .  .  .  Fields: *ast.FieldList {
+81  .  .  .  .  .  .  .  Opening: src/rulesConfig.go:12:35
+82  .  .  .  .  .  .  .  List: []*ast.Field (len = 5) {
+83  .  .  .  .  .  .  .  .  0: *ast.Field {
+84  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+85  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+86  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:13:2
+87  .  .  .  .  .  .  .  .  .  .  .  Name: "ScenarioName"
+88  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+89  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+90  .  .  .  .  .  .  .  .  .  .  .  .  Name: "ScenarioName"
+91  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 83)
+92  .  .  .  .  .  .  .  .  .  .  .  }
+93  .  .  .  .  .  .  .  .  .  .  }
+94  .  .  .  .  .  .  .  .  .  }
+95  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+96  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:13:16
+97  .  .  .  .  .  .  .  .  .  .  Name: "string"
+98  .  .  .  .  .  .  .  .  .  }
+99  .  .  .  .  .  .  .  .  .  Tag: *ast.BasicLit {
+100  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:13:23
+101  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+102  .  .  .  .  .  .  .  .  .  .  Value: "`json:\"scenarioName\"`"
+103  .  .  .  .  .  .  .  .  .  }
+104  .  .  .  .  .  .  .  .  }
+105  .  .  .  .  .  .  .  .  1: *ast.Field {
+106  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+107  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+108  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:14:2
+109  .  .  .  .  .  .  .  .  .  .  .  Name: "ChannelName"
+110  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+111  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+112  .  .  .  .  .  .  .  .  .  .  .  .  Name: "ChannelName"
+113  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 105)
+114  .  .  .  .  .  .  .  .  .  .  .  }
+115  .  .  .  .  .  .  .  .  .  .  }
+116  .  .  .  .  .  .  .  .  .  }
+117  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+118  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:14:16
+119  .  .  .  .  .  .  .  .  .  .  Name: "string"
+120  .  .  .  .  .  .  .  .  .  }
+121  .  .  .  .  .  .  .  .  .  Tag: *ast.BasicLit {
+122  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:14:23
+123  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+124  .  .  .  .  .  .  .  .  .  .  Value: "`json:\"channelName\"`"
+125  .  .  .  .  .  .  .  .  .  }
+126  .  .  .  .  .  .  .  .  }
+127  .  .  .  .  .  .  .  .  2: *ast.Field {
+128  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+129  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+130  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:15:2
+131  .  .  .  .  .  .  .  .  .  .  .  Name: "HasAttachment"
+132  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+133  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+134  .  .  .  .  .  .  .  .  .  .  .  .  Name: "HasAttachment"
+135  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 127)
+136  .  .  .  .  .  .  .  .  .  .  .  }
+137  .  .  .  .  .  .  .  .  .  .  }
+138  .  .  .  .  .  .  .  .  .  }
+139  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+140  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:15:16
+141  .  .  .  .  .  .  .  .  .  .  Name: "bool"
+142  .  .  .  .  .  .  .  .  .  }
+143  .  .  .  .  .  .  .  .  .  Tag: *ast.BasicLit {
+144  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:15:23
+145  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+146  .  .  .  .  .  .  .  .  .  .  Value: "`json:\"hasAttachment\"`"
+147  .  .  .  .  .  .  .  .  .  }
+148  .  .  .  .  .  .  .  .  }
+149  .  .  .  .  .  .  .  .  3: *ast.Field {
+150  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+151  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+152  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:16:2
+153  .  .  .  .  .  .  .  .  .  .  .  Name: "HasSignature"
+154  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+155  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+156  .  .  .  .  .  .  .  .  .  .  .  .  Name: "HasSignature"
+157  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 149)
+158  .  .  .  .  .  .  .  .  .  .  .  }
+159  .  .  .  .  .  .  .  .  .  .  }
+160  .  .  .  .  .  .  .  .  .  }
+161  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+162  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:16:16
+163  .  .  .  .  .  .  .  .  .  .  Name: "bool"
+164  .  .  .  .  .  .  .  .  .  }
+165  .  .  .  .  .  .  .  .  .  Tag: *ast.BasicLit {
+166  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:16:23
+167  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+168  .  .  .  .  .  .  .  .  .  .  Value: "`json:\"hasSignature\"`"
+169  .  .  .  .  .  .  .  .  .  }
+170  .  .  .  .  .  .  .  .  }
+171  .  .  .  .  .  .  .  .  4: *ast.Field {
+172  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+173  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+174  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:17:2
+175  .  .  .  .  .  .  .  .  .  .  .  Name: "IsSmartCard"
+176  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+177  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+178  .  .  .  .  .  .  .  .  .  .  .  .  Name: "IsSmartCard"
+179  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 171)
+180  .  .  .  .  .  .  .  .  .  .  .  }
+181  .  .  .  .  .  .  .  .  .  .  }
+182  .  .  .  .  .  .  .  .  .  }
+183  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+184  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:17:16
+185  .  .  .  .  .  .  .  .  .  .  Name: "bool"
+186  .  .  .  .  .  .  .  .  .  }
+187  .  .  .  .  .  .  .  .  .  Tag: *ast.BasicLit {
+188  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:17:23
+189  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+190  .  .  .  .  .  .  .  .  .  .  Value: "`json:\"isSmartCard\"`"
+191  .  .  .  .  .  .  .  .  .  }
+192  .  .  .  .  .  .  .  .  }
+193  .  .  .  .  .  .  .  }
+194  .  .  .  .  .  .  .  Closing: src/rulesConfig.go:18:1
+195  .  .  .  .  .  .  }
+196  .  .  .  .  .  .  Incomplete: false
+197  .  .  .  .  .  }
+198  .  .  .  .  }
+199  .  .  .  }
+200  .  .  .  Rparen: -
+201  .  .  }
+202  .  .  2: *ast.GenDecl {
+203  .  .  .  TokPos: src/rulesConfig.go:20:1
+204  .  .  .  Tok: type
+205  .  .  .  Lparen: -
+206  .  .  .  Specs: []ast.Spec (len = 1) {
+207  .  .  .  .  0: *ast.TypeSpec {
+208  .  .  .  .  .  Name: *ast.Ident {
+209  .  .  .  .  .  .  NamePos: src/rulesConfig.go:20:6
+210  .  .  .  .  .  .  Name: "RuleScenarioResult"
+211  .  .  .  .  .  .  Obj: *ast.Object {
+212  .  .  .  .  .  .  .  Kind: type
+213  .  .  .  .  .  .  .  Name: "RuleScenarioResult"
+214  .  .  .  .  .  .  .  Decl: *(obj @ 207)
+215  .  .  .  .  .  .  }
+216  .  .  .  .  .  }
+217  .  .  .  .  .  Type: *ast.StructType {
+218  .  .  .  .  .  .  Struct: src/rulesConfig.go:20:25
+219  .  .  .  .  .  .  Fields: *ast.FieldList {
+220  .  .  .  .  .  .  .  Opening: src/rulesConfig.go:20:32
+221  .  .  .  .  .  .  .  List: []*ast.Field (len = 8) {
+222  .  .  .  .  .  .  .  .  0: *ast.Field {
+223  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+224  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+225  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:21:2
+226  .  .  .  .  .  .  .  .  .  .  .  Name: "ConditionName"
+227  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+228  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+229  .  .  .  .  .  .  .  .  .  .  .  .  Name: "ConditionName"
+230  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 222)
+231  .  .  .  .  .  .  .  .  .  .  .  }
+232  .  .  .  .  .  .  .  .  .  .  }
+233  .  .  .  .  .  .  .  .  .  }
+234  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+235  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:21:23
+236  .  .  .  .  .  .  .  .  .  .  Name: "string"
+237  .  .  .  .  .  .  .  .  .  }
+238  .  .  .  .  .  .  .  .  .  Tag: *ast.BasicLit {
+239  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:21:30
+240  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+241  .  .  .  .  .  .  .  .  .  .  Value: "`json:\"conditionName\"`"
+242  .  .  .  .  .  .  .  .  .  }
+243  .  .  .  .  .  .  .  .  }
+244  .  .  .  .  .  .  .  .  1: *ast.Field {
+245  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+246  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+247  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:22:2
+248  .  .  .  .  .  .  .  .  .  .  .  Name: "IsSharepointUpload"
+249  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+250  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+251  .  .  .  .  .  .  .  .  .  .  .  .  Name: "IsSharepointUpload"
+252  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 244)
+253  .  .  .  .  .  .  .  .  .  .  .  }
+254  .  .  .  .  .  .  .  .  .  .  }
+255  .  .  .  .  .  .  .  .  .  }
+256  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+257  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:22:23
+258  .  .  .  .  .  .  .  .  .  .  Name: "bool"
+259  .  .  .  .  .  .  .  .  .  }
+260  .  .  .  .  .  .  .  .  .  Tag: *ast.BasicLit {
+261  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:22:30
+262  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+263  .  .  .  .  .  .  .  .  .  .  Value: "`json:\"isSharepointUpload\"`"
+264  .  .  .  .  .  .  .  .  .  }
+265  .  .  .  .  .  .  .  .  }
+266  .  .  .  .  .  .  .  .  2: *ast.Field {
+267  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+268  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+269  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:23:2
+270  .  .  .  .  .  .  .  .  .  .  .  Name: "IsEFormGenerate"
+271  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+272  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+273  .  .  .  .  .  .  .  .  .  .  .  .  Name: "IsEFormGenerate"
+274  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 266)
+275  .  .  .  .  .  .  .  .  .  .  .  }
+276  .  .  .  .  .  .  .  .  .  .  }
+277  .  .  .  .  .  .  .  .  .  }
+278  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+279  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:23:23
+280  .  .  .  .  .  .  .  .  .  .  Name: "bool"
+281  .  .  .  .  .  .  .  .  .  }
+282  .  .  .  .  .  .  .  .  .  Tag: *ast.BasicLit {
+283  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:23:30
+284  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+285  .  .  .  .  .  .  .  .  .  .  Value: "`json:\"isEFormGenerate\"`"
+286  .  .  .  .  .  .  .  .  .  }
+287  .  .  .  .  .  .  .  .  }
+288  .  .  .  .  .  .  .  .  3: *ast.Field {
+289  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+290  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+291  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:24:2
+292  .  .  .  .  .  .  .  .  .  .  .  Name: "IsShortFormGenerate"
+293  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+294  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+295  .  .  .  .  .  .  .  .  .  .  .  .  Name: "IsShortFormGenerate"
+296  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 288)
+297  .  .  .  .  .  .  .  .  .  .  .  }
+298  .  .  .  .  .  .  .  .  .  .  }
+299  .  .  .  .  .  .  .  .  .  }
+300  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+301  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:24:23
+302  .  .  .  .  .  .  .  .  .  .  Name: "bool"
+303  .  .  .  .  .  .  .  .  .  }
+304  .  .  .  .  .  .  .  .  .  Tag: *ast.BasicLit {
+305  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:24:30
+306  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+307  .  .  .  .  .  .  .  .  .  .  Value: "`json:\"isShortFormGenerate\"`"
+308  .  .  .  .  .  .  .  .  .  }
+309  .  .  .  .  .  .  .  .  }
+310  .  .  .  .  .  .  .  .  4: *ast.Field {
+311  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+312  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+313  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:25:2
+314  .  .  .  .  .  .  .  .  .  .  .  Name: "IsAttachmentGenerate"
+315  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+316  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+317  .  .  .  .  .  .  .  .  .  .  .  .  Name: "IsAttachmentGenerate"
+318  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 310)
+319  .  .  .  .  .  .  .  .  .  .  .  }
+320  .  .  .  .  .  .  .  .  .  .  }
+321  .  .  .  .  .  .  .  .  .  }
+322  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+323  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:25:23
+324  .  .  .  .  .  .  .  .  .  .  Name: "bool"
+325  .  .  .  .  .  .  .  .  .  }
+326  .  .  .  .  .  .  .  .  .  Tag: *ast.BasicLit {
+327  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:25:30
+328  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+329  .  .  .  .  .  .  .  .  .  .  Value: "`json:\"isAttachmentGenerate\"`"
+330  .  .  .  .  .  .  .  .  .  }
+331  .  .  .  .  .  .  .  .  }
+332  .  .  .  .  .  .  .  .  5: *ast.Field {
+333  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+334  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+335  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:26:2
+336  .  .  .  .  .  .  .  .  .  .  .  Name: "IsWarningMessage"
+337  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+338  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+339  .  .  .  .  .  .  .  .  .  .  .  .  Name: "IsWarningMessage"
+340  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 332)
+341  .  .  .  .  .  .  .  .  .  .  .  }
+342  .  .  .  .  .  .  .  .  .  .  }
+343  .  .  .  .  .  .  .  .  .  }
+344  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+345  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:26:23
+346  .  .  .  .  .  .  .  .  .  .  Name: "bool"
+347  .  .  .  .  .  .  .  .  .  }
+348  .  .  .  .  .  .  .  .  .  Tag: *ast.BasicLit {
+349  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:26:30
+350  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+351  .  .  .  .  .  .  .  .  .  .  Value: "`json:\"isWarningMessage\"`"
+352  .  .  .  .  .  .  .  .  .  }
+353  .  .  .  .  .  .  .  .  }
+354  .  .  .  .  .  .  .  .  6: *ast.Field {
+355  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+356  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+357  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:27:2
+358  .  .  .  .  .  .  .  .  .  .  .  Name: "WarningMessage"
+359  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+360  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+361  .  .  .  .  .  .  .  .  .  .  .  .  Name: "WarningMessage"
+362  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 354)
+363  .  .  .  .  .  .  .  .  .  .  .  }
+364  .  .  .  .  .  .  .  .  .  .  }
+365  .  .  .  .  .  .  .  .  .  }
+366  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+367  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:27:23
+368  .  .  .  .  .  .  .  .  .  .  Name: "string"
+369  .  .  .  .  .  .  .  .  .  }
+370  .  .  .  .  .  .  .  .  .  Tag: *ast.BasicLit {
+371  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:27:30
+372  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+373  .  .  .  .  .  .  .  .  .  .  Value: "`json:\"warningMessage\"`"
+374  .  .  .  .  .  .  .  .  .  }
+375  .  .  .  .  .  .  .  .  }
+376  .  .  .  .  .  .  .  .  7: *ast.Field {
+377  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+378  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+379  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:28:2
+380  .  .  .  .  .  .  .  .  .  .  .  Name: "IsContactItemEForm"
+381  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+382  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+383  .  .  .  .  .  .  .  .  .  .  .  .  Name: "IsContactItemEForm"
+384  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 376)
+385  .  .  .  .  .  .  .  .  .  .  .  }
+386  .  .  .  .  .  .  .  .  .  .  }
+387  .  .  .  .  .  .  .  .  .  }
+388  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+389  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:28:23
+390  .  .  .  .  .  .  .  .  .  .  Name: "bool"
+391  .  .  .  .  .  .  .  .  .  }
+392  .  .  .  .  .  .  .  .  .  Tag: *ast.BasicLit {
+393  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:28:30
+394  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+395  .  .  .  .  .  .  .  .  .  .  Value: "`json:\"isContactItemEForm\"`"
+396  .  .  .  .  .  .  .  .  .  }
+397  .  .  .  .  .  .  .  .  }
+398  .  .  .  .  .  .  .  }
+399  .  .  .  .  .  .  .  Closing: src/rulesConfig.go:29:1
+400  .  .  .  .  .  .  }
+401  .  .  .  .  .  .  Incomplete: false
+402  .  .  .  .  .  }
+403  .  .  .  .  }
+404  .  .  .  }
+405  .  .  .  Rparen: -
+406  .  .  }
+407  .  .  3: *ast.GenDecl {
+408  .  .  .  TokPos: src/rulesConfig.go:31:1
+409  .  .  .  Tok: type
+410  .  .  .  Lparen: -
+411  .  .  .  Specs: []ast.Spec (len = 1) {
+412  .  .  .  .  0: *ast.TypeSpec {
+413  .  .  .  .  .  Name: *ast.Ident {
+414  .  .  .  .  .  .  NamePos: src/rulesConfig.go:31:6
+415  .  .  .  .  .  .  Name: "RuleScenario"
+416  .  .  .  .  .  .  Obj: *ast.Object {
+417  .  .  .  .  .  .  .  Kind: type
+418  .  .  .  .  .  .  .  Name: "RuleScenario"
+419  .  .  .  .  .  .  .  Decl: *(obj @ 412)
+420  .  .  .  .  .  .  }
+421  .  .  .  .  .  }
+422  .  .  .  .  .  Type: *ast.StructType {
+423  .  .  .  .  .  .  Struct: src/rulesConfig.go:31:19
+424  .  .  .  .  .  .  Fields: *ast.FieldList {
+425  .  .  .  .  .  .  .  Opening: src/rulesConfig.go:31:26
+426  .  .  .  .  .  .  .  List: []*ast.Field (len = 2) {
+427  .  .  .  .  .  .  .  .  0: *ast.Field {
+428  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+429  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+430  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:32:2
+431  .  .  .  .  .  .  .  .  .  .  .  Name: "RuleCondition"
+432  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+433  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+434  .  .  .  .  .  .  .  .  .  .  .  .  Name: "RuleCondition"
+435  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 427)
+436  .  .  .  .  .  .  .  .  .  .  .  }
+437  .  .  .  .  .  .  .  .  .  .  }
+438  .  .  .  .  .  .  .  .  .  }
+439  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+440  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:32:16
+441  .  .  .  .  .  .  .  .  .  .  Name: "RuleScenarioCondition"
+442  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 72)
+443  .  .  .  .  .  .  .  .  .  }
+444  .  .  .  .  .  .  .  .  .  Tag: *ast.BasicLit {
+445  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:32:38
+446  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+447  .  .  .  .  .  .  .  .  .  .  Value: "`json:\"ruleScenarioCondition\"`"
+448  .  .  .  .  .  .  .  .  .  }
+449  .  .  .  .  .  .  .  .  }
+450  .  .  .  .  .  .  .  .  1: *ast.Field {
+451  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+452  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+453  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:33:2
+454  .  .  .  .  .  .  .  .  .  .  .  Name: "RuleResult"
+455  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+456  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+457  .  .  .  .  .  .  .  .  .  .  .  .  Name: "RuleResult"
+458  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 450)
+459  .  .  .  .  .  .  .  .  .  .  .  }
+460  .  .  .  .  .  .  .  .  .  .  }
+461  .  .  .  .  .  .  .  .  .  }
+462  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+463  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:33:16
+464  .  .  .  .  .  .  .  .  .  .  Name: "RuleScenarioResult"
+465  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 211)
+466  .  .  .  .  .  .  .  .  .  }
+467  .  .  .  .  .  .  .  .  .  Tag: *ast.BasicLit {
+468  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:33:38
+469  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+470  .  .  .  .  .  .  .  .  .  .  Value: "`json:\"ruleScenarioResult\"`"
+471  .  .  .  .  .  .  .  .  .  }
+472  .  .  .  .  .  .  .  .  }
+473  .  .  .  .  .  .  .  }
+474  .  .  .  .  .  .  .  Closing: src/rulesConfig.go:34:1
+475  .  .  .  .  .  .  }
+476  .  .  .  .  .  .  Incomplete: false
+477  .  .  .  .  .  }
+478  .  .  .  .  }
+479  .  .  .  }
+480  .  .  .  Rparen: -
+481  .  .  }
+482  .  .  4: *ast.GenDecl {
+483  .  .  .  TokPos: src/rulesConfig.go:36:1
+484  .  .  .  Tok: type
+485  .  .  .  Lparen: -
+486  .  .  .  Specs: []ast.Spec (len = 1) {
+487  .  .  .  .  0: *ast.TypeSpec {
+488  .  .  .  .  .  Name: *ast.Ident {
+489  .  .  .  .  .  .  NamePos: src/rulesConfig.go:36:6
+490  .  .  .  .  .  .  Name: "ListRuleScenario"
+491  .  .  .  .  .  .  Obj: *ast.Object {
+492  .  .  .  .  .  .  .  Kind: type
+493  .  .  .  .  .  .  .  Name: "ListRuleScenario"
+494  .  .  .  .  .  .  .  Decl: *(obj @ 487)
+495  .  .  .  .  .  .  }
+496  .  .  .  .  .  }
+497  .  .  .  .  .  Type: *ast.StructType {
+498  .  .  .  .  .  .  Struct: src/rulesConfig.go:36:23
+499  .  .  .  .  .  .  Fields: *ast.FieldList {
+500  .  .  .  .  .  .  .  Opening: src/rulesConfig.go:36:30
+501  .  .  .  .  .  .  .  List: []*ast.Field (len = 1) {
+502  .  .  .  .  .  .  .  .  0: *ast.Field {
+503  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+504  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+505  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:37:2
+506  .  .  .  .  .  .  .  .  .  .  .  Name: "Scenario"
+507  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+508  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+509  .  .  .  .  .  .  .  .  .  .  .  .  Name: "Scenario"
+510  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 502)
+511  .  .  .  .  .  .  .  .  .  .  .  }
+512  .  .  .  .  .  .  .  .  .  .  }
+513  .  .  .  .  .  .  .  .  .  }
+514  .  .  .  .  .  .  .  .  .  Type: *ast.ArrayType {
+515  .  .  .  .  .  .  .  .  .  .  Lbrack: src/rulesConfig.go:37:11
+516  .  .  .  .  .  .  .  .  .  .  Elt: *ast.Ident {
+517  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:37:13
+518  .  .  .  .  .  .  .  .  .  .  .  Name: "RuleScenario"
+519  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 416)
+520  .  .  .  .  .  .  .  .  .  .  }
+521  .  .  .  .  .  .  .  .  .  }
+522  .  .  .  .  .  .  .  .  .  Tag: *ast.BasicLit {
+523  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:37:26
+524  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+525  .  .  .  .  .  .  .  .  .  .  Value: "`json:\"genPDFRules\"`"
+526  .  .  .  .  .  .  .  .  .  }
+527  .  .  .  .  .  .  .  .  }
+528  .  .  .  .  .  .  .  }
+529  .  .  .  .  .  .  .  Closing: src/rulesConfig.go:38:1
+530  .  .  .  .  .  .  }
+531  .  .  .  .  .  .  Incomplete: false
+532  .  .  .  .  .  }
+533  .  .  .  .  }
+534  .  .  .  }
+535  .  .  .  Rparen: -
+536  .  .  }
+537  .  .  5: *ast.GenDecl {
+538  .  .  .  TokPos: src/rulesConfig.go:40:1
+539  .  .  .  Tok: var
+540  .  .  .  Lparen: -
+541  .  .  .  Specs: []ast.Spec (len = 1) {
+542  .  .  .  .  0: *ast.ValueSpec {
+543  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+544  .  .  .  .  .  .  0: *ast.Ident {
+545  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:40:5
+546  .  .  .  .  .  .  .  Name: "ruleBase"
+547  .  .  .  .  .  .  .  Obj: *ast.Object {
+548  .  .  .  .  .  .  .  .  Kind: var
+549  .  .  .  .  .  .  .  .  Name: "ruleBase"
+550  .  .  .  .  .  .  .  .  Decl: *(obj @ 542)
+551  .  .  .  .  .  .  .  .  Data: 0
+552  .  .  .  .  .  .  .  }
+553  .  .  .  .  .  .  }
+554  .  .  .  .  .  }
+555  .  .  .  .  .  Type: *ast.MapType {
+556  .  .  .  .  .  .  Map: src/rulesConfig.go:40:14
+557  .  .  .  .  .  .  Key: *ast.Ident {
+558  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:40:18
+559  .  .  .  .  .  .  .  Name: "RuleScenarioCondition"
+560  .  .  .  .  .  .  .  Obj: *(obj @ 72)
+561  .  .  .  .  .  .  }
+562  .  .  .  .  .  .  Value: *ast.Ident {
+563  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:40:40
+564  .  .  .  .  .  .  .  Name: "RuleScenario"
+565  .  .  .  .  .  .  .  Obj: *(obj @ 416)
+566  .  .  .  .  .  .  }
+567  .  .  .  .  .  }
+568  .  .  .  .  }
+569  .  .  .  }
+570  .  .  .  Rparen: -
+571  .  .  }
+572  .  .  6: *ast.GenDecl {
+573  .  .  .  TokPos: src/rulesConfig.go:41:1
+574  .  .  .  Tok: var
+575  .  .  .  Lparen: src/rulesConfig.go:41:5
+576  .  .  .  Specs: []ast.Spec (len = 8) {
+577  .  .  .  .  0: *ast.ValueSpec {
+578  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+579  .  .  .  .  .  .  0: *ast.Ident {
+580  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:42:2
+581  .  .  .  .  .  .  .  Name: "DEFAULT_CONDITION_NAME"
+582  .  .  .  .  .  .  .  Obj: *ast.Object {
+583  .  .  .  .  .  .  .  .  Kind: var
+584  .  .  .  .  .  .  .  .  Name: "DEFAULT_CONDITION_NAME"
+585  .  .  .  .  .  .  .  .  Decl: *(obj @ 577)
+586  .  .  .  .  .  .  .  .  Data: 0
+587  .  .  .  .  .  .  .  }
+588  .  .  .  .  .  .  }
+589  .  .  .  .  .  }
+590  .  .  .  .  .  Values: []ast.Expr (len = 1) {
+591  .  .  .  .  .  .  0: *ast.CallExpr {
+592  .  .  .  .  .  .  .  Fun: *ast.Ident {
+593  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:42:34
+594  .  .  .  .  .  .  .  .  Name: "Get"
+595  .  .  .  .  .  .  .  }
+596  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:42:37
+597  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+598  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+599  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:42:38
+600  .  .  .  .  .  .  .  .  .  Kind: STRING
+601  .  .  .  .  .  .  .  .  .  Value: "\"form.default.conditionName\""
+602  .  .  .  .  .  .  .  .  }
+603  .  .  .  .  .  .  .  }
+604  .  .  .  .  .  .  .  Ellipsis: -
+605  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:42:66
+606  .  .  .  .  .  .  }
+607  .  .  .  .  .  }
+608  .  .  .  .  }
+609  .  .  .  .  1: *ast.ValueSpec {
+610  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+611  .  .  .  .  .  .  0: *ast.Ident {
+612  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:43:2
+613  .  .  .  .  .  .  .  Name: "DEFAULT_IS_SHAREPOINT_UPLOAD"
+614  .  .  .  .  .  .  .  Obj: *ast.Object {
+615  .  .  .  .  .  .  .  .  Kind: var
+616  .  .  .  .  .  .  .  .  Name: "DEFAULT_IS_SHAREPOINT_UPLOAD"
+617  .  .  .  .  .  .  .  .  Decl: *(obj @ 609)
+618  .  .  .  .  .  .  .  .  Data: 1
+619  .  .  .  .  .  .  .  }
+620  .  .  .  .  .  .  }
+621  .  .  .  .  .  }
+622  .  .  .  .  .  Values: []ast.Expr (len = 1) {
+623  .  .  .  .  .  .  0: *ast.CallExpr {
+624  .  .  .  .  .  .  .  Fun: *ast.Ident {
+625  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:43:34
+626  .  .  .  .  .  .  .  .  Name: "GetBool"
+627  .  .  .  .  .  .  .  }
+628  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:43:41
+629  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+630  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+631  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:43:42
+632  .  .  .  .  .  .  .  .  .  Kind: STRING
+633  .  .  .  .  .  .  .  .  .  Value: "\"form.default.isSharepointUpload\""
+634  .  .  .  .  .  .  .  .  }
+635  .  .  .  .  .  .  .  }
+636  .  .  .  .  .  .  .  Ellipsis: -
+637  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:43:75
+638  .  .  .  .  .  .  }
+639  .  .  .  .  .  }
+640  .  .  .  .  }
+641  .  .  .  .  2: *ast.ValueSpec {
+642  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+643  .  .  .  .  .  .  0: *ast.Ident {
+644  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:44:2
+645  .  .  .  .  .  .  .  Name: "DEFAULT_IS_EFORM_GEN"
+646  .  .  .  .  .  .  .  Obj: *ast.Object {
+647  .  .  .  .  .  .  .  .  Kind: var
+648  .  .  .  .  .  .  .  .  Name: "DEFAULT_IS_EFORM_GEN"
+649  .  .  .  .  .  .  .  .  Decl: *(obj @ 641)
+650  .  .  .  .  .  .  .  .  Data: 2
+651  .  .  .  .  .  .  .  }
+652  .  .  .  .  .  .  }
+653  .  .  .  .  .  }
+654  .  .  .  .  .  Values: []ast.Expr (len = 1) {
+655  .  .  .  .  .  .  0: *ast.CallExpr {
+656  .  .  .  .  .  .  .  Fun: *ast.Ident {
+657  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:44:34
+658  .  .  .  .  .  .  .  .  Name: "GetBool"
+659  .  .  .  .  .  .  .  }
+660  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:44:41
+661  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+662  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+663  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:44:42
+664  .  .  .  .  .  .  .  .  .  Kind: STRING
+665  .  .  .  .  .  .  .  .  .  Value: "\"form.default.IsEFormGenerate\""
+666  .  .  .  .  .  .  .  .  }
+667  .  .  .  .  .  .  .  }
+668  .  .  .  .  .  .  .  Ellipsis: -
+669  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:44:72
+670  .  .  .  .  .  .  }
+671  .  .  .  .  .  }
+672  .  .  .  .  }
+673  .  .  .  .  3: *ast.ValueSpec {
+674  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+675  .  .  .  .  .  .  0: *ast.Ident {
+676  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:45:2
+677  .  .  .  .  .  .  .  Name: "DEFAULT_IS_SHORT_FORM_GEN"
+678  .  .  .  .  .  .  .  Obj: *ast.Object {
+679  .  .  .  .  .  .  .  .  Kind: var
+680  .  .  .  .  .  .  .  .  Name: "DEFAULT_IS_SHORT_FORM_GEN"
+681  .  .  .  .  .  .  .  .  Decl: *(obj @ 673)
+682  .  .  .  .  .  .  .  .  Data: 3
+683  .  .  .  .  .  .  .  }
+684  .  .  .  .  .  .  }
+685  .  .  .  .  .  }
+686  .  .  .  .  .  Values: []ast.Expr (len = 1) {
+687  .  .  .  .  .  .  0: *ast.CallExpr {
+688  .  .  .  .  .  .  .  Fun: *ast.Ident {
+689  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:45:34
+690  .  .  .  .  .  .  .  .  Name: "GetBool"
+691  .  .  .  .  .  .  .  }
+692  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:45:41
+693  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+694  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+695  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:45:42
+696  .  .  .  .  .  .  .  .  .  Kind: STRING
+697  .  .  .  .  .  .  .  .  .  Value: "\"form.default.isShortFormGenerate\""
+698  .  .  .  .  .  .  .  .  }
+699  .  .  .  .  .  .  .  }
+700  .  .  .  .  .  .  .  Ellipsis: -
+701  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:45:76
+702  .  .  .  .  .  .  }
+703  .  .  .  .  .  }
+704  .  .  .  .  }
+705  .  .  .  .  4: *ast.ValueSpec {
+706  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+707  .  .  .  .  .  .  0: *ast.Ident {
+708  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:46:2
+709  .  .  .  .  .  .  .  Name: "DEFAULT_IS_ATTACHMENT_GEN"
+710  .  .  .  .  .  .  .  Obj: *ast.Object {
+711  .  .  .  .  .  .  .  .  Kind: var
+712  .  .  .  .  .  .  .  .  Name: "DEFAULT_IS_ATTACHMENT_GEN"
+713  .  .  .  .  .  .  .  .  Decl: *(obj @ 705)
+714  .  .  .  .  .  .  .  .  Data: 4
+715  .  .  .  .  .  .  .  }
+716  .  .  .  .  .  .  }
+717  .  .  .  .  .  }
+718  .  .  .  .  .  Values: []ast.Expr (len = 1) {
+719  .  .  .  .  .  .  0: *ast.CallExpr {
+720  .  .  .  .  .  .  .  Fun: *ast.Ident {
+721  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:46:34
+722  .  .  .  .  .  .  .  .  Name: "GetBool"
+723  .  .  .  .  .  .  .  }
+724  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:46:41
+725  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+726  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+727  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:46:42
+728  .  .  .  .  .  .  .  .  .  Kind: STRING
+729  .  .  .  .  .  .  .  .  .  Value: "\"form.default.isAttachmentGenerate\""
+730  .  .  .  .  .  .  .  .  }
+731  .  .  .  .  .  .  .  }
+732  .  .  .  .  .  .  .  Ellipsis: -
+733  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:46:77
+734  .  .  .  .  .  .  }
+735  .  .  .  .  .  }
+736  .  .  .  .  }
+737  .  .  .  .  5: *ast.ValueSpec {
+738  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+739  .  .  .  .  .  .  0: *ast.Ident {
+740  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:47:2
+741  .  .  .  .  .  .  .  Name: "DEFAULT_IS_WARNING_MESSAGE"
+742  .  .  .  .  .  .  .  Obj: *ast.Object {
+743  .  .  .  .  .  .  .  .  Kind: var
+744  .  .  .  .  .  .  .  .  Name: "DEFAULT_IS_WARNING_MESSAGE"
+745  .  .  .  .  .  .  .  .  Decl: *(obj @ 737)
+746  .  .  .  .  .  .  .  .  Data: 5
+747  .  .  .  .  .  .  .  }
+748  .  .  .  .  .  .  }
+749  .  .  .  .  .  }
+750  .  .  .  .  .  Values: []ast.Expr (len = 1) {
+751  .  .  .  .  .  .  0: *ast.CallExpr {
+752  .  .  .  .  .  .  .  Fun: *ast.Ident {
+753  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:47:34
+754  .  .  .  .  .  .  .  .  Name: "GetBool"
+755  .  .  .  .  .  .  .  }
+756  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:47:41
+757  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+758  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+759  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:47:42
+760  .  .  .  .  .  .  .  .  .  Kind: STRING
+761  .  .  .  .  .  .  .  .  .  Value: "\"form.default.isWarningMessage\""
+762  .  .  .  .  .  .  .  .  }
+763  .  .  .  .  .  .  .  }
+764  .  .  .  .  .  .  .  Ellipsis: -
+765  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:47:73
+766  .  .  .  .  .  .  }
+767  .  .  .  .  .  }
+768  .  .  .  .  }
+769  .  .  .  .  6: *ast.ValueSpec {
+770  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+771  .  .  .  .  .  .  0: *ast.Ident {
+772  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:48:2
+773  .  .  .  .  .  .  .  Name: "DEFAULT_WARNING_MESSAGE"
+774  .  .  .  .  .  .  .  Obj: *ast.Object {
+775  .  .  .  .  .  .  .  .  Kind: var
+776  .  .  .  .  .  .  .  .  Name: "DEFAULT_WARNING_MESSAGE"
+777  .  .  .  .  .  .  .  .  Decl: *(obj @ 769)
+778  .  .  .  .  .  .  .  .  Data: 6
+779  .  .  .  .  .  .  .  }
+780  .  .  .  .  .  .  }
+781  .  .  .  .  .  }
+782  .  .  .  .  .  Values: []ast.Expr (len = 1) {
+783  .  .  .  .  .  .  0: *ast.CallExpr {
+784  .  .  .  .  .  .  .  Fun: *ast.Ident {
+785  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:48:34
+786  .  .  .  .  .  .  .  .  Name: "Get"
+787  .  .  .  .  .  .  .  }
+788  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:48:37
+789  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+790  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+791  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:48:38
+792  .  .  .  .  .  .  .  .  .  Kind: STRING
+793  .  .  .  .  .  .  .  .  .  Value: "\"form.default.warningMessage\""
+794  .  .  .  .  .  .  .  .  }
+795  .  .  .  .  .  .  .  }
+796  .  .  .  .  .  .  .  Ellipsis: -
+797  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:48:67
+798  .  .  .  .  .  .  }
+799  .  .  .  .  .  }
+800  .  .  .  .  }
+801  .  .  .  .  7: *ast.ValueSpec {
+802  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+803  .  .  .  .  .  .  0: *ast.Ident {
+804  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:49:2
+805  .  .  .  .  .  .  .  Name: "DEFAULT_IS_CONTACT_ITEM_EFORM"
+806  .  .  .  .  .  .  .  Obj: *ast.Object {
+807  .  .  .  .  .  .  .  .  Kind: var
+808  .  .  .  .  .  .  .  .  Name: "DEFAULT_IS_CONTACT_ITEM_EFORM"
+809  .  .  .  .  .  .  .  .  Decl: *(obj @ 801)
+810  .  .  .  .  .  .  .  .  Data: 7
+811  .  .  .  .  .  .  .  }
+812  .  .  .  .  .  .  }
+813  .  .  .  .  .  }
+814  .  .  .  .  .  Values: []ast.Expr (len = 1) {
+815  .  .  .  .  .  .  0: *ast.CallExpr {
+816  .  .  .  .  .  .  .  Fun: *ast.Ident {
+817  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:49:34
+818  .  .  .  .  .  .  .  .  Name: "GetBool"
+819  .  .  .  .  .  .  .  }
+820  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:49:41
+821  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+822  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+823  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:49:42
+824  .  .  .  .  .  .  .  .  .  Kind: STRING
+825  .  .  .  .  .  .  .  .  .  Value: "\"form.default.isContactItemEForm\""
+826  .  .  .  .  .  .  .  .  }
+827  .  .  .  .  .  .  .  }
+828  .  .  .  .  .  .  .  Ellipsis: -
+829  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:49:75
+830  .  .  .  .  .  .  }
+831  .  .  .  .  .  }
+832  .  .  .  .  }
+833  .  .  .  }
+834  .  .  .  Rparen: src/rulesConfig.go:50:1
+835  .  .  }
+836  .  .  7: *ast.GenDecl {
+837  .  .  .  TokPos: src/rulesConfig.go:52:1
+838  .  .  .  Tok: var
+839  .  .  .  Lparen: -
+840  .  .  .  Specs: []ast.Spec (len = 1) {
+841  .  .  .  .  0: *ast.ValueSpec {
+842  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+843  .  .  .  .  .  .  0: *ast.Ident {
+844  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:52:5
+845  .  .  .  .  .  .  .  Name: "url"
+846  .  .  .  .  .  .  .  Obj: *ast.Object {
+847  .  .  .  .  .  .  .  .  Kind: var
+848  .  .  .  .  .  .  .  .  Name: "url"
+849  .  .  .  .  .  .  .  .  Decl: *(obj @ 841)
+850  .  .  .  .  .  .  .  .  Data: 0
+851  .  .  .  .  .  .  .  }
+852  .  .  .  .  .  .  }
+853  .  .  .  .  .  }
+854  .  .  .  .  .  Values: []ast.Expr (len = 1) {
+855  .  .  .  .  .  .  0: *ast.CallExpr {
+856  .  .  .  .  .  .  .  Fun: *ast.SelectorExpr {
+857  .  .  .  .  .  .  .  .  X: *ast.Ident {
+858  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:52:11
+859  .  .  .  .  .  .  .  .  .  Name: "conf"
+860  .  .  .  .  .  .  .  .  }
+861  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+862  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:52:16
+863  .  .  .  .  .  .  .  .  .  Name: "Get"
+864  .  .  .  .  .  .  .  .  }
+865  .  .  .  .  .  .  .  }
+866  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:52:19
+867  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+868  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+869  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:52:20
+870  .  .  .  .  .  .  .  .  .  Kind: STRING
+871  .  .  .  .  .  .  .  .  .  Value: "\"ad.url\""
+872  .  .  .  .  .  .  .  .  }
+873  .  .  .  .  .  .  .  }
+874  .  .  .  .  .  .  .  Ellipsis: -
+875  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:52:28
+876  .  .  .  .  .  .  }
+877  .  .  .  .  .  }
+878  .  .  .  .  }
+879  .  .  .  }
+880  .  .  .  Rparen: -
+881  .  .  }
+882  .  .  8: *ast.FuncDecl {
+883  .  .  .  Name: *ast.Ident {
+884  .  .  .  .  NamePos: src/rulesConfig.go:54:6
+885  .  .  .  .  Name: "InitialRule"
+886  .  .  .  .  Obj: *ast.Object {
+887  .  .  .  .  .  Kind: func
+888  .  .  .  .  .  Name: "InitialRule"
+889  .  .  .  .  .  Decl: *(obj @ 882)
+890  .  .  .  .  }
+891  .  .  .  }
+892  .  .  .  Type: *ast.FuncType {
+893  .  .  .  .  Func: src/rulesConfig.go:54:1
+894  .  .  .  .  Params: *ast.FieldList {
+895  .  .  .  .  .  Opening: src/rulesConfig.go:54:17
+896  .  .  .  .  .  Closing: src/rulesConfig.go:54:18
+897  .  .  .  .  }
+898  .  .  .  .  Results: *ast.FieldList {
+899  .  .  .  .  .  Opening: -
+900  .  .  .  .  .  List: []*ast.Field (len = 1) {
+901  .  .  .  .  .  .  0: *ast.Field {
+902  .  .  .  .  .  .  .  Type: *ast.Ident {
+903  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:54:20
+904  .  .  .  .  .  .  .  .  Name: "error"
+905  .  .  .  .  .  .  .  }
+906  .  .  .  .  .  .  }
+907  .  .  .  .  .  }
+908  .  .  .  .  .  Closing: -
+909  .  .  .  .  }
+910  .  .  .  }
+911  .  .  .  Body: *ast.BlockStmt {
+912  .  .  .  .  Lbrace: src/rulesConfig.go:54:26
+913  .  .  .  .  List: []ast.Stmt (len = 10) {
+914  .  .  .  .  .  0: *ast.AssignStmt {
+915  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+916  .  .  .  .  .  .  .  0: *ast.Ident {
+917  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:55:2
+918  .  .  .  .  .  .  .  .  Name: "fileLocation"
+919  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+920  .  .  .  .  .  .  .  .  .  Kind: var
+921  .  .  .  .  .  .  .  .  .  Name: "fileLocation"
+922  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 914)
+923  .  .  .  .  .  .  .  .  }
+924  .  .  .  .  .  .  .  }
+925  .  .  .  .  .  .  }
+926  .  .  .  .  .  .  TokPos: src/rulesConfig.go:55:15
+927  .  .  .  .  .  .  Tok: :=
+928  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+929  .  .  .  .  .  .  .  0: *ast.CallExpr {
+930  .  .  .  .  .  .  .  .  Fun: *ast.Ident {
+931  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:55:18
+932  .  .  .  .  .  .  .  .  .  Name: "getFileLocation"
+933  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+934  .  .  .  .  .  .  .  .  .  .  Kind: func
+935  .  .  .  .  .  .  .  .  .  .  Name: "getFileLocation"
+936  .  .  .  .  .  .  .  .  .  .  Decl: *ast.FuncDecl {
+937  .  .  .  .  .  .  .  .  .  .  .  Name: *ast.Ident {
+938  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:112:6
+939  .  .  .  .  .  .  .  .  .  .  .  .  Name: "getFileLocation"
+940  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 933)
+941  .  .  .  .  .  .  .  .  .  .  .  }
+942  .  .  .  .  .  .  .  .  .  .  .  Type: *ast.FuncType {
+943  .  .  .  .  .  .  .  .  .  .  .  .  Func: src/rulesConfig.go:112:1
+944  .  .  .  .  .  .  .  .  .  .  .  .  Params: *ast.FieldList {
+945  .  .  .  .  .  .  .  .  .  .  .  .  .  Opening: src/rulesConfig.go:112:21
+946  .  .  .  .  .  .  .  .  .  .  .  .  .  List: []*ast.Field (len = 1) {
+947  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Field {
+948  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+949  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+950  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:112:22
+951  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "location"
+952  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+953  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+954  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "location"
+955  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 947)
+956  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+957  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+958  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+959  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+960  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:112:31
+961  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "string"
+962  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+963  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+964  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+965  .  .  .  .  .  .  .  .  .  .  .  .  .  Closing: src/rulesConfig.go:112:37
+966  .  .  .  .  .  .  .  .  .  .  .  .  }
+967  .  .  .  .  .  .  .  .  .  .  .  .  Results: *ast.FieldList {
+968  .  .  .  .  .  .  .  .  .  .  .  .  .  Opening: -
+969  .  .  .  .  .  .  .  .  .  .  .  .  .  List: []*ast.Field (len = 1) {
+970  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Field {
+971  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+972  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:112:39
+973  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "string"
+974  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+975  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+976  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+977  .  .  .  .  .  .  .  .  .  .  .  .  .  Closing: -
+978  .  .  .  .  .  .  .  .  .  .  .  .  }
+979  .  .  .  .  .  .  .  .  .  .  .  }
+980  .  .  .  .  .  .  .  .  .  .  .  Body: *ast.BlockStmt {
+981  .  .  .  .  .  .  .  .  .  .  .  .  Lbrace: src/rulesConfig.go:112:46
+982  .  .  .  .  .  .  .  .  .  .  .  .  List: []ast.Stmt (len = 1) {
+983  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.ReturnStmt {
+984  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Return: src/rulesConfig.go:113:2
+985  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Results: []ast.Expr (len = 1) {
+986  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.BinaryExpr {
+987  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  X: *ast.CallExpr {
+988  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Fun: *ast.SelectorExpr {
+989  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+990  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:113:9
+991  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "os"
+992  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+993  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+994  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:113:12
+995  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "Getenv"
+996  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+997  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+998  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:113:18
+999  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+1000  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+1001  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:113:19
+1002  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+1003  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Value: "\"GOPATH\""
+1004  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1005  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1006  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Ellipsis: -
+1007  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:113:27
+1008  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1009  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  OpPos: src/rulesConfig.go:113:29
+1010  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Op: +
+1011  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Y: *ast.CallExpr {
+1012  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Fun: *ast.Ident {
+1013  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:113:31
+1014  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "Get"
+1015  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1016  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:113:34
+1017  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+1018  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1019  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:113:35
+1020  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "location"
+1021  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 952)
+1022  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1023  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1024  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Ellipsis: -
+1025  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:113:43
+1026  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1027  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1028  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1029  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1030  .  .  .  .  .  .  .  .  .  .  .  .  }
+1031  .  .  .  .  .  .  .  .  .  .  .  .  Rbrace: src/rulesConfig.go:114:1
+1032  .  .  .  .  .  .  .  .  .  .  .  }
+1033  .  .  .  .  .  .  .  .  .  .  }
+1034  .  .  .  .  .  .  .  .  .  }
+1035  .  .  .  .  .  .  .  .  }
+1036  .  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:55:33
+1037  .  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+1038  .  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+1039  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:55:34
+1040  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+1041  .  .  .  .  .  .  .  .  .  .  Value: "\"form.rules.json\""
+1042  .  .  .  .  .  .  .  .  .  }
+1043  .  .  .  .  .  .  .  .  }
+1044  .  .  .  .  .  .  .  .  Ellipsis: -
+1045  .  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:55:51
+1046  .  .  .  .  .  .  .  }
+1047  .  .  .  .  .  .  }
+1048  .  .  .  .  .  }
+1049  .  .  .  .  .  1: *ast.AssignStmt {
+1050  .  .  .  .  .  .  Lhs: []ast.Expr (len = 2) {
+1051  .  .  .  .  .  .  .  0: *ast.Ident {
+1052  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:57:2
+1053  .  .  .  .  .  .  .  .  Name: "file"
+1054  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+1055  .  .  .  .  .  .  .  .  .  Kind: var
+1056  .  .  .  .  .  .  .  .  .  Name: "file"
+1057  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 1049)
+1058  .  .  .  .  .  .  .  .  }
+1059  .  .  .  .  .  .  .  }
+1060  .  .  .  .  .  .  .  1: *ast.Ident {
+1061  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:57:8
+1062  .  .  .  .  .  .  .  .  Name: "err"
+1063  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+1064  .  .  .  .  .  .  .  .  .  Kind: var
+1065  .  .  .  .  .  .  .  .  .  Name: "err"
+1066  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 1049)
+1067  .  .  .  .  .  .  .  .  }
+1068  .  .  .  .  .  .  .  }
+1069  .  .  .  .  .  .  }
+1070  .  .  .  .  .  .  TokPos: src/rulesConfig.go:57:12
+1071  .  .  .  .  .  .  Tok: :=
+1072  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+1073  .  .  .  .  .  .  .  0: *ast.CallExpr {
+1074  .  .  .  .  .  .  .  .  Fun: *ast.SelectorExpr {
+1075  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+1076  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:57:15
+1077  .  .  .  .  .  .  .  .  .  .  Name: "ioutil"
+1078  .  .  .  .  .  .  .  .  .  }
+1079  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+1080  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:57:22
+1081  .  .  .  .  .  .  .  .  .  .  Name: "ReadFile"
+1082  .  .  .  .  .  .  .  .  .  }
+1083  .  .  .  .  .  .  .  .  }
+1084  .  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:57:30
+1085  .  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+1086  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1087  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:57:31
+1088  .  .  .  .  .  .  .  .  .  .  Name: "fileLocation"
+1089  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 919)
+1090  .  .  .  .  .  .  .  .  .  }
+1091  .  .  .  .  .  .  .  .  }
+1092  .  .  .  .  .  .  .  .  Ellipsis: -
+1093  .  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:57:43
+1094  .  .  .  .  .  .  .  }
+1095  .  .  .  .  .  .  }
+1096  .  .  .  .  .  }
+1097  .  .  .  .  .  2: *ast.IfStmt {
+1098  .  .  .  .  .  .  If: src/rulesConfig.go:58:2
+1099  .  .  .  .  .  .  Cond: *ast.BinaryExpr {
+1100  .  .  .  .  .  .  .  X: *ast.Ident {
+1101  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:58:5
+1102  .  .  .  .  .  .  .  .  Name: "err"
+1103  .  .  .  .  .  .  .  .  Obj: *(obj @ 1063)
+1104  .  .  .  .  .  .  .  }
+1105  .  .  .  .  .  .  .  OpPos: src/rulesConfig.go:58:9
+1106  .  .  .  .  .  .  .  Op: !=
+1107  .  .  .  .  .  .  .  Y: *ast.Ident {
+1108  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:58:12
+1109  .  .  .  .  .  .  .  .  Name: "nil"
+1110  .  .  .  .  .  .  .  }
+1111  .  .  .  .  .  .  }
+1112  .  .  .  .  .  .  Body: *ast.BlockStmt {
+1113  .  .  .  .  .  .  .  Lbrace: src/rulesConfig.go:58:16
+1114  .  .  .  .  .  .  .  List: []ast.Stmt (len = 1) {
+1115  .  .  .  .  .  .  .  .  0: *ast.ExprStmt {
+1116  .  .  .  .  .  .  .  .  .  X: *ast.CallExpr {
+1117  .  .  .  .  .  .  .  .  .  .  Fun: *ast.SelectorExpr {
+1118  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+1119  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:59:3
+1120  .  .  .  .  .  .  .  .  .  .  .  .  Name: "fmt"
+1121  .  .  .  .  .  .  .  .  .  .  .  }
+1122  .  .  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+1123  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:59:7
+1124  .  .  .  .  .  .  .  .  .  .  .  .  Name: "Printf"
+1125  .  .  .  .  .  .  .  .  .  .  .  }
+1126  .  .  .  .  .  .  .  .  .  .  }
+1127  .  .  .  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:59:13
+1128  .  .  .  .  .  .  .  .  .  .  Args: []ast.Expr (len = 2) {
+1129  .  .  .  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+1130  .  .  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:59:14
+1131  .  .  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+1132  .  .  .  .  .  .  .  .  .  .  .  .  Value: "\"RULE_001:  %v\\n\""
+1133  .  .  .  .  .  .  .  .  .  .  .  }
+1134  .  .  .  .  .  .  .  .  .  .  .  1: *ast.Ident {
+1135  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:59:33
+1136  .  .  .  .  .  .  .  .  .  .  .  .  Name: "err"
+1137  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1063)
+1138  .  .  .  .  .  .  .  .  .  .  .  }
+1139  .  .  .  .  .  .  .  .  .  .  }
+1140  .  .  .  .  .  .  .  .  .  .  Ellipsis: -
+1141  .  .  .  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:59:36
+1142  .  .  .  .  .  .  .  .  .  }
+1143  .  .  .  .  .  .  .  .  }
+1144  .  .  .  .  .  .  .  }
+1145  .  .  .  .  .  .  .  Rbrace: src/rulesConfig.go:60:2
+1146  .  .  .  .  .  .  }
+1147  .  .  .  .  .  }
+1148  .  .  .  .  .  3: *ast.AssignStmt {
+1149  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+1150  .  .  .  .  .  .  .  0: *ast.Ident {
+1151  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:62:2
+1152  .  .  .  .  .  .  .  .  Name: "listRuleScenario"
+1153  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+1154  .  .  .  .  .  .  .  .  .  Kind: var
+1155  .  .  .  .  .  .  .  .  .  Name: "listRuleScenario"
+1156  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 1148)
+1157  .  .  .  .  .  .  .  .  }
+1158  .  .  .  .  .  .  .  }
+1159  .  .  .  .  .  .  }
+1160  .  .  .  .  .  .  TokPos: src/rulesConfig.go:62:19
+1161  .  .  .  .  .  .  Tok: :=
+1162  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+1163  .  .  .  .  .  .  .  0: *ast.CallExpr {
+1164  .  .  .  .  .  .  .  .  Fun: *ast.Ident {
+1165  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:62:22
+1166  .  .  .  .  .  .  .  .  .  Name: "new"
+1167  .  .  .  .  .  .  .  .  }
+1168  .  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:62:25
+1169  .  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+1170  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1171  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:62:26
+1172  .  .  .  .  .  .  .  .  .  .  Name: "ListRuleScenario"
+1173  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 491)
+1174  .  .  .  .  .  .  .  .  .  }
+1175  .  .  .  .  .  .  .  .  }
+1176  .  .  .  .  .  .  .  .  Ellipsis: -
+1177  .  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:62:42
+1178  .  .  .  .  .  .  .  }
+1179  .  .  .  .  .  .  }
+1180  .  .  .  .  .  }
+1181  .  .  .  .  .  4: *ast.AssignStmt {
+1182  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+1183  .  .  .  .  .  .  .  0: *ast.Ident {
+1184  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:63:2
+1185  .  .  .  .  .  .  .  .  Name: "err"
+1186  .  .  .  .  .  .  .  .  Obj: *(obj @ 1063)
+1187  .  .  .  .  .  .  .  }
+1188  .  .  .  .  .  .  }
+1189  .  .  .  .  .  .  TokPos: src/rulesConfig.go:63:6
+1190  .  .  .  .  .  .  Tok: =
+1191  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+1192  .  .  .  .  .  .  .  0: *ast.CallExpr {
+1193  .  .  .  .  .  .  .  .  Fun: *ast.SelectorExpr {
+1194  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+1195  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:63:8
+1196  .  .  .  .  .  .  .  .  .  .  Name: "json"
+1197  .  .  .  .  .  .  .  .  .  }
+1198  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+1199  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:63:13
+1200  .  .  .  .  .  .  .  .  .  .  Name: "Unmarshal"
+1201  .  .  .  .  .  .  .  .  .  }
+1202  .  .  .  .  .  .  .  .  }
+1203  .  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:63:22
+1204  .  .  .  .  .  .  .  .  Args: []ast.Expr (len = 2) {
+1205  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1206  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:63:23
+1207  .  .  .  .  .  .  .  .  .  .  Name: "file"
+1208  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1054)
+1209  .  .  .  .  .  .  .  .  .  }
+1210  .  .  .  .  .  .  .  .  .  1: *ast.Ident {
+1211  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:63:29
+1212  .  .  .  .  .  .  .  .  .  .  Name: "listRuleScenario"
+1213  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1153)
+1214  .  .  .  .  .  .  .  .  .  }
+1215  .  .  .  .  .  .  .  .  }
+1216  .  .  .  .  .  .  .  .  Ellipsis: -
+1217  .  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:63:45
+1218  .  .  .  .  .  .  .  }
+1219  .  .  .  .  .  .  }
+1220  .  .  .  .  .  }
+1221  .  .  .  .  .  5: *ast.IfStmt {
+1222  .  .  .  .  .  .  If: src/rulesConfig.go:64:2
+1223  .  .  .  .  .  .  Cond: *ast.BinaryExpr {
+1224  .  .  .  .  .  .  .  X: *ast.Ident {
+1225  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:64:5
+1226  .  .  .  .  .  .  .  .  Name: "err"
+1227  .  .  .  .  .  .  .  .  Obj: *(obj @ 1063)
+1228  .  .  .  .  .  .  .  }
+1229  .  .  .  .  .  .  .  OpPos: src/rulesConfig.go:64:9
+1230  .  .  .  .  .  .  .  Op: !=
+1231  .  .  .  .  .  .  .  Y: *ast.Ident {
+1232  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:64:12
+1233  .  .  .  .  .  .  .  .  Name: "nil"
+1234  .  .  .  .  .  .  .  }
+1235  .  .  .  .  .  .  }
+1236  .  .  .  .  .  .  Body: *ast.BlockStmt {
+1237  .  .  .  .  .  .  .  Lbrace: src/rulesConfig.go:64:16
+1238  .  .  .  .  .  .  .  List: []ast.Stmt (len = 1) {
+1239  .  .  .  .  .  .  .  .  0: *ast.ExprStmt {
+1240  .  .  .  .  .  .  .  .  .  X: *ast.CallExpr {
+1241  .  .  .  .  .  .  .  .  .  .  Fun: *ast.SelectorExpr {
+1242  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+1243  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:65:3
+1244  .  .  .  .  .  .  .  .  .  .  .  .  Name: "fmt"
+1245  .  .  .  .  .  .  .  .  .  .  .  }
+1246  .  .  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+1247  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:65:7
+1248  .  .  .  .  .  .  .  .  .  .  .  .  Name: "Printf"
+1249  .  .  .  .  .  .  .  .  .  .  .  }
+1250  .  .  .  .  .  .  .  .  .  .  }
+1251  .  .  .  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:65:13
+1252  .  .  .  .  .  .  .  .  .  .  Args: []ast.Expr (len = 2) {
+1253  .  .  .  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+1254  .  .  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:65:14
+1255  .  .  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+1256  .  .  .  .  .  .  .  .  .  .  .  .  Value: "\"RULE_002:  %v\\n\""
+1257  .  .  .  .  .  .  .  .  .  .  .  }
+1258  .  .  .  .  .  .  .  .  .  .  .  1: *ast.Ident {
+1259  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:65:33
+1260  .  .  .  .  .  .  .  .  .  .  .  .  Name: "err"
+1261  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1063)
+1262  .  .  .  .  .  .  .  .  .  .  .  }
+1263  .  .  .  .  .  .  .  .  .  .  }
+1264  .  .  .  .  .  .  .  .  .  .  Ellipsis: -
+1265  .  .  .  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:65:36
+1266  .  .  .  .  .  .  .  .  .  }
+1267  .  .  .  .  .  .  .  .  }
+1268  .  .  .  .  .  .  .  }
+1269  .  .  .  .  .  .  .  Rbrace: src/rulesConfig.go:66:2
+1270  .  .  .  .  .  .  }
+1271  .  .  .  .  .  }
+1272  .  .  .  .  .  6: *ast.AssignStmt {
+1273  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+1274  .  .  .  .  .  .  .  0: *ast.Ident {
+1275  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:68:2
+1276  .  .  .  .  .  .  .  .  Name: "ruleBase"
+1277  .  .  .  .  .  .  .  .  Obj: *(obj @ 547)
+1278  .  .  .  .  .  .  .  }
+1279  .  .  .  .  .  .  }
+1280  .  .  .  .  .  .  TokPos: src/rulesConfig.go:68:11
+1281  .  .  .  .  .  .  Tok: =
+1282  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+1283  .  .  .  .  .  .  .  0: *ast.CallExpr {
+1284  .  .  .  .  .  .  .  .  Fun: *ast.Ident {
+1285  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:68:13
+1286  .  .  .  .  .  .  .  .  .  Name: "make"
+1287  .  .  .  .  .  .  .  .  }
+1288  .  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:68:17
+1289  .  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+1290  .  .  .  .  .  .  .  .  .  0: *ast.MapType {
+1291  .  .  .  .  .  .  .  .  .  .  Map: src/rulesConfig.go:68:18
+1292  .  .  .  .  .  .  .  .  .  .  Key: *ast.Ident {
+1293  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:68:22
+1294  .  .  .  .  .  .  .  .  .  .  .  Name: "RuleScenarioCondition"
+1295  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 72)
+1296  .  .  .  .  .  .  .  .  .  .  }
+1297  .  .  .  .  .  .  .  .  .  .  Value: *ast.Ident {
+1298  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:68:44
+1299  .  .  .  .  .  .  .  .  .  .  .  Name: "RuleScenario"
+1300  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 416)
+1301  .  .  .  .  .  .  .  .  .  .  }
+1302  .  .  .  .  .  .  .  .  .  }
+1303  .  .  .  .  .  .  .  .  }
+1304  .  .  .  .  .  .  .  .  Ellipsis: -
+1305  .  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:68:56
+1306  .  .  .  .  .  .  .  }
+1307  .  .  .  .  .  .  }
+1308  .  .  .  .  .  }
+1309  .  .  .  .  .  7: *ast.RangeStmt {
+1310  .  .  .  .  .  .  For: src/rulesConfig.go:70:2
+1311  .  .  .  .  .  .  Key: *ast.Ident {
+1312  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:70:6
+1313  .  .  .  .  .  .  .  Name: "_"
+1314  .  .  .  .  .  .  .  Obj: *ast.Object {
+1315  .  .  .  .  .  .  .  .  Kind: var
+1316  .  .  .  .  .  .  .  .  Name: "_"
+1317  .  .  .  .  .  .  .  .  Decl: *ast.AssignStmt {
+1318  .  .  .  .  .  .  .  .  .  Lhs: []ast.Expr (len = 2) {
+1319  .  .  .  .  .  .  .  .  .  .  0: *(obj @ 1311)
+1320  .  .  .  .  .  .  .  .  .  .  1: *ast.Ident {
+1321  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:70:9
+1322  .  .  .  .  .  .  .  .  .  .  .  Name: "item"
+1323  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+1324  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+1325  .  .  .  .  .  .  .  .  .  .  .  .  Name: "item"
+1326  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 1317)
+1327  .  .  .  .  .  .  .  .  .  .  .  }
+1328  .  .  .  .  .  .  .  .  .  .  }
+1329  .  .  .  .  .  .  .  .  .  }
+1330  .  .  .  .  .  .  .  .  .  TokPos: src/rulesConfig.go:70:14
+1331  .  .  .  .  .  .  .  .  .  Tok: :=
+1332  .  .  .  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+1333  .  .  .  .  .  .  .  .  .  .  0: *ast.UnaryExpr {
+1334  .  .  .  .  .  .  .  .  .  .  .  OpPos: src/rulesConfig.go:70:17
+1335  .  .  .  .  .  .  .  .  .  .  .  Op: range
+1336  .  .  .  .  .  .  .  .  .  .  .  X: *ast.SelectorExpr {
+1337  .  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+1338  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:70:23
+1339  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "listRuleScenario"
+1340  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1153)
+1341  .  .  .  .  .  .  .  .  .  .  .  .  }
+1342  .  .  .  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+1343  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:70:40
+1344  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "Scenario"
+1345  .  .  .  .  .  .  .  .  .  .  .  .  }
+1346  .  .  .  .  .  .  .  .  .  .  .  }
+1347  .  .  .  .  .  .  .  .  .  .  }
+1348  .  .  .  .  .  .  .  .  .  }
+1349  .  .  .  .  .  .  .  .  }
+1350  .  .  .  .  .  .  .  }
+1351  .  .  .  .  .  .  }
+1352  .  .  .  .  .  .  Value: *(obj @ 1320)
+1353  .  .  .  .  .  .  TokPos: src/rulesConfig.go:70:14
+1354  .  .  .  .  .  .  Tok: :=
+1355  .  .  .  .  .  .  X: *(obj @ 1336)
+1356  .  .  .  .  .  .  Body: *ast.BlockStmt {
+1357  .  .  .  .  .  .  .  Lbrace: src/rulesConfig.go:70:49
+1358  .  .  .  .  .  .  .  List: []ast.Stmt (len = 1) {
+1359  .  .  .  .  .  .  .  .  0: *ast.AssignStmt {
+1360  .  .  .  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+1361  .  .  .  .  .  .  .  .  .  .  0: *ast.IndexExpr {
+1362  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+1363  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:71:3
+1364  .  .  .  .  .  .  .  .  .  .  .  .  Name: "ruleBase"
+1365  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 547)
+1366  .  .  .  .  .  .  .  .  .  .  .  }
+1367  .  .  .  .  .  .  .  .  .  .  .  Lbrack: src/rulesConfig.go:71:11
+1368  .  .  .  .  .  .  .  .  .  .  .  Index: *ast.SelectorExpr {
+1369  .  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+1370  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:71:12
+1371  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "item"
+1372  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1323)
+1373  .  .  .  .  .  .  .  .  .  .  .  .  }
+1374  .  .  .  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+1375  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:71:17
+1376  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "RuleCondition"
+1377  .  .  .  .  .  .  .  .  .  .  .  .  }
+1378  .  .  .  .  .  .  .  .  .  .  .  }
+1379  .  .  .  .  .  .  .  .  .  .  .  Rbrack: src/rulesConfig.go:71:30
+1380  .  .  .  .  .  .  .  .  .  .  }
+1381  .  .  .  .  .  .  .  .  .  }
+1382  .  .  .  .  .  .  .  .  .  TokPos: src/rulesConfig.go:71:32
+1383  .  .  .  .  .  .  .  .  .  Tok: =
+1384  .  .  .  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+1385  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1386  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:71:34
+1387  .  .  .  .  .  .  .  .  .  .  .  Name: "item"
+1388  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1323)
+1389  .  .  .  .  .  .  .  .  .  .  }
+1390  .  .  .  .  .  .  .  .  .  }
+1391  .  .  .  .  .  .  .  .  }
+1392  .  .  .  .  .  .  .  }
+1393  .  .  .  .  .  .  .  Rbrace: src/rulesConfig.go:72:2
+1394  .  .  .  .  .  .  }
+1395  .  .  .  .  .  }
+1396  .  .  .  .  .  8: *ast.AssignStmt {
+1397  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+1398  .  .  .  .  .  .  .  0: *ast.Ident {
+1399  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:74:2
+1400  .  .  .  .  .  .  .  .  Name: "err"
+1401  .  .  .  .  .  .  .  .  Obj: *(obj @ 1063)
+1402  .  .  .  .  .  .  .  }
+1403  .  .  .  .  .  .  }
+1404  .  .  .  .  .  .  TokPos: src/rulesConfig.go:74:6
+1405  .  .  .  .  .  .  Tok: =
+1406  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+1407  .  .  .  .  .  .  .  0: *ast.CallExpr {
+1408  .  .  .  .  .  .  .  .  Fun: *ast.Ident {
+1409  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:74:8
+1410  .  .  .  .  .  .  .  .  .  Name: "checkDuplicateRule"
+1411  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+1412  .  .  .  .  .  .  .  .  .  .  Kind: func
+1413  .  .  .  .  .  .  .  .  .  .  Name: "checkDuplicateRule"
+1414  .  .  .  .  .  .  .  .  .  .  Decl: *ast.FuncDecl {
+1415  .  .  .  .  .  .  .  .  .  .  .  Name: *ast.Ident {
+1416  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:78:6
+1417  .  .  .  .  .  .  .  .  .  .  .  .  Name: "checkDuplicateRule"
+1418  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1411)
+1419  .  .  .  .  .  .  .  .  .  .  .  }
+1420  .  .  .  .  .  .  .  .  .  .  .  Type: *ast.FuncType {
+1421  .  .  .  .  .  .  .  .  .  .  .  .  Func: src/rulesConfig.go:78:1
+1422  .  .  .  .  .  .  .  .  .  .  .  .  Params: *ast.FieldList {
+1423  .  .  .  .  .  .  .  .  .  .  .  .  .  Opening: src/rulesConfig.go:78:24
+1424  .  .  .  .  .  .  .  .  .  .  .  .  .  List: []*ast.Field (len = 2) {
+1425  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Field {
+1426  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+1427  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1428  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:78:25
+1429  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "jsonFile"
+1430  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+1431  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+1432  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "jsonFile"
+1433  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 1425)
+1434  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1435  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1436  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1437  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Type: *ast.ArrayType {
+1438  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Lbrack: src/rulesConfig.go:78:34
+1439  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Elt: *ast.Ident {
+1440  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:78:36
+1441  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "RuleScenario"
+1442  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 416)
+1443  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1444  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1445  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1446  .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: *ast.Field {
+1447  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+1448  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1449  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:78:50
+1450  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "jsonMap"
+1451  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+1452  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+1453  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "jsonMap"
+1454  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 1446)
+1455  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1456  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1457  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1458  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Type: *ast.MapType {
+1459  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Map: src/rulesConfig.go:78:58
+1460  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Key: *ast.Ident {
+1461  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:78:62
+1462  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "RuleScenarioCondition"
+1463  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 72)
+1464  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1465  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Value: *ast.Ident {
+1466  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:78:84
+1467  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "RuleScenario"
+1468  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 416)
+1469  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1470  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1471  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1472  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1473  .  .  .  .  .  .  .  .  .  .  .  .  .  Closing: src/rulesConfig.go:78:96
+1474  .  .  .  .  .  .  .  .  .  .  .  .  }
+1475  .  .  .  .  .  .  .  .  .  .  .  .  Results: *ast.FieldList {
+1476  .  .  .  .  .  .  .  .  .  .  .  .  .  Opening: src/rulesConfig.go:78:98
+1477  .  .  .  .  .  .  .  .  .  .  .  .  .  List: []*ast.Field (len = 1) {
+1478  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Field {
+1479  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+1480  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1481  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:78:99
+1482  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "err"
+1483  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+1484  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+1485  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "err"
+1486  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 1478)
+1487  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1488  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1489  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1490  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+1491  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:78:103
+1492  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "error"
+1493  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1494  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1495  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1496  .  .  .  .  .  .  .  .  .  .  .  .  .  Closing: src/rulesConfig.go:78:108
+1497  .  .  .  .  .  .  .  .  .  .  .  .  }
+1498  .  .  .  .  .  .  .  .  .  .  .  }
+1499  .  .  .  .  .  .  .  .  .  .  .  Body: *ast.BlockStmt {
+1500  .  .  .  .  .  .  .  .  .  .  .  .  Lbrace: src/rulesConfig.go:78:110
+1501  .  .  .  .  .  .  .  .  .  .  .  .  List: []ast.Stmt (len = 2) {
+1502  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.IfStmt {
+1503  .  .  .  .  .  .  .  .  .  .  .  .  .  .  If: src/rulesConfig.go:79:2
+1504  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Cond: *ast.BinaryExpr {
+1505  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  X: *ast.CallExpr {
+1506  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Fun: *ast.Ident {
+1507  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:79:5
+1508  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "len"
+1509  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1510  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:79:8
+1511  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+1512  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1513  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:79:9
+1514  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "jsonFile"
+1515  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1430)
+1516  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1517  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1518  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Ellipsis: -
+1519  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:79:17
+1520  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1521  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  OpPos: src/rulesConfig.go:79:19
+1522  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Op: !=
+1523  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Y: *ast.CallExpr {
+1524  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Fun: *ast.Ident {
+1525  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:79:22
+1526  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "len"
+1527  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1528  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:79:25
+1529  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+1530  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1531  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:79:26
+1532  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "jsonMap"
+1533  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1451)
+1534  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1535  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1536  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Ellipsis: -
+1537  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:79:33
+1538  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1539  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1540  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Body: *ast.BlockStmt {
+1541  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Lbrace: src/rulesConfig.go:79:35
+1542  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  List: []ast.Stmt (len = 1) {
+1543  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.AssignStmt {
+1544  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+1545  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1546  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:80:3
+1547  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "err"
+1548  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1483)
+1549  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1550  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1551  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TokPos: src/rulesConfig.go:80:7
+1552  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Tok: =
+1553  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+1554  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.CallExpr {
+1555  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Fun: *ast.SelectorExpr {
+1556  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+1557  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:80:9
+1558  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "errors"
+1559  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1560  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+1561  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:80:16
+1562  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "New"
+1563  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1564  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1565  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:80:19
+1566  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+1567  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+1568  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:80:20
+1569  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+1570  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Value: "\"RULE_003: found duplicate rule, please check file formrules.json\""
+1571  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1572  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1573  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Ellipsis: -
+1574  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:80:86
+1575  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1576  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1577  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1578  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1579  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Rbrace: src/rulesConfig.go:81:2
+1580  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1581  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1582  .  .  .  .  .  .  .  .  .  .  .  .  .  1: *ast.ReturnStmt {
+1583  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Return: src/rulesConfig.go:82:2
+1584  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1585  .  .  .  .  .  .  .  .  .  .  .  .  }
+1586  .  .  .  .  .  .  .  .  .  .  .  .  Rbrace: src/rulesConfig.go:83:1
+1587  .  .  .  .  .  .  .  .  .  .  .  }
+1588  .  .  .  .  .  .  .  .  .  .  }
+1589  .  .  .  .  .  .  .  .  .  }
+1590  .  .  .  .  .  .  .  .  }
+1591  .  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:74:26
+1592  .  .  .  .  .  .  .  .  Args: []ast.Expr (len = 2) {
+1593  .  .  .  .  .  .  .  .  .  0: *ast.SelectorExpr {
+1594  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+1595  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:74:27
+1596  .  .  .  .  .  .  .  .  .  .  .  Name: "listRuleScenario"
+1597  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1153)
+1598  .  .  .  .  .  .  .  .  .  .  }
+1599  .  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+1600  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:74:44
+1601  .  .  .  .  .  .  .  .  .  .  .  Name: "Scenario"
+1602  .  .  .  .  .  .  .  .  .  .  }
+1603  .  .  .  .  .  .  .  .  .  }
+1604  .  .  .  .  .  .  .  .  .  1: *ast.Ident {
+1605  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:74:54
+1606  .  .  .  .  .  .  .  .  .  .  Name: "ruleBase"
+1607  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 547)
+1608  .  .  .  .  .  .  .  .  .  }
+1609  .  .  .  .  .  .  .  .  }
+1610  .  .  .  .  .  .  .  .  Ellipsis: -
+1611  .  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:74:62
+1612  .  .  .  .  .  .  .  }
+1613  .  .  .  .  .  .  }
+1614  .  .  .  .  .  }
+1615  .  .  .  .  .  9: *ast.ReturnStmt {
+1616  .  .  .  .  .  .  Return: src/rulesConfig.go:75:2
+1617  .  .  .  .  .  .  Results: []ast.Expr (len = 1) {
+1618  .  .  .  .  .  .  .  0: *ast.Ident {
+1619  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:75:9
+1620  .  .  .  .  .  .  .  .  Name: "err"
+1621  .  .  .  .  .  .  .  .  Obj: *(obj @ 1063)
+1622  .  .  .  .  .  .  .  }
+1623  .  .  .  .  .  .  }
+1624  .  .  .  .  .  }
+1625  .  .  .  .  }
+1626  .  .  .  .  Rbrace: src/rulesConfig.go:76:1
+1627  .  .  .  }
+1628  .  .  }
+1629  .  .  9: *(obj @ 1414)
+1630  .  .  10: *ast.FuncDecl {
+1631  .  .  .  Name: *ast.Ident {
+1632  .  .  .  .  NamePos: src/rulesConfig.go:85:6
+1633  .  .  .  .  Name: "GetRules"
+1634  .  .  .  .  Obj: *ast.Object {
+1635  .  .  .  .  .  Kind: func
+1636  .  .  .  .  .  Name: "GetRules"
+1637  .  .  .  .  .  Decl: *(obj @ 1630)
+1638  .  .  .  .  }
+1639  .  .  .  }
+1640  .  .  .  Type: *ast.FuncType {
+1641  .  .  .  .  Func: src/rulesConfig.go:85:1
+1642  .  .  .  .  Params: *ast.FieldList {
+1643  .  .  .  .  .  Opening: src/rulesConfig.go:85:14
+1644  .  .  .  .  .  List: []*ast.Field (len = 1) {
+1645  .  .  .  .  .  .  0: *ast.Field {
+1646  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+1647  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1648  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:85:15
+1649  .  .  .  .  .  .  .  .  .  Name: "condition"
+1650  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+1651  .  .  .  .  .  .  .  .  .  .  Kind: var
+1652  .  .  .  .  .  .  .  .  .  .  Name: "condition"
+1653  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 1645)
+1654  .  .  .  .  .  .  .  .  .  }
+1655  .  .  .  .  .  .  .  .  }
+1656  .  .  .  .  .  .  .  }
+1657  .  .  .  .  .  .  .  Type: *ast.Ident {
+1658  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:85:25
+1659  .  .  .  .  .  .  .  .  Name: "RuleScenarioCondition"
+1660  .  .  .  .  .  .  .  .  Obj: *(obj @ 72)
+1661  .  .  .  .  .  .  .  }
+1662  .  .  .  .  .  .  }
+1663  .  .  .  .  .  }
+1664  .  .  .  .  .  Closing: src/rulesConfig.go:85:46
+1665  .  .  .  .  }
+1666  .  .  .  .  Results: *ast.FieldList {
+1667  .  .  .  .  .  Opening: src/rulesConfig.go:85:48
+1668  .  .  .  .  .  List: []*ast.Field (len = 2) {
+1669  .  .  .  .  .  .  0: *ast.Field {
+1670  .  .  .  .  .  .  .  Type: *ast.Ident {
+1671  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:85:49
+1672  .  .  .  .  .  .  .  .  Name: "RuleScenarioResult"
+1673  .  .  .  .  .  .  .  .  Obj: *(obj @ 211)
+1674  .  .  .  .  .  .  .  }
+1675  .  .  .  .  .  .  }
+1676  .  .  .  .  .  .  1: *ast.Field {
+1677  .  .  .  .  .  .  .  Type: *ast.Ident {
+1678  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:85:69
+1679  .  .  .  .  .  .  .  .  Name: "error"
+1680  .  .  .  .  .  .  .  }
+1681  .  .  .  .  .  .  }
+1682  .  .  .  .  .  }
+1683  .  .  .  .  .  Closing: src/rulesConfig.go:85:74
+1684  .  .  .  .  }
+1685  .  .  .  }
+1686  .  .  .  Body: *ast.BlockStmt {
+1687  .  .  .  .  Lbrace: src/rulesConfig.go:85:76
+1688  .  .  .  .  List: []ast.Stmt (len = 5) {
+1689  .  .  .  .  .  0: *ast.DeclStmt {
+1690  .  .  .  .  .  .  Decl: *ast.GenDecl {
+1691  .  .  .  .  .  .  .  TokPos: src/rulesConfig.go:86:2
+1692  .  .  .  .  .  .  .  Tok: var
+1693  .  .  .  .  .  .  .  Lparen: -
+1694  .  .  .  .  .  .  .  Specs: []ast.Spec (len = 1) {
+1695  .  .  .  .  .  .  .  .  0: *ast.ValueSpec {
+1696  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+1697  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1698  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:86:6
+1699  .  .  .  .  .  .  .  .  .  .  .  Name: "err"
+1700  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+1701  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+1702  .  .  .  .  .  .  .  .  .  .  .  .  Name: "err"
+1703  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 1695)
+1704  .  .  .  .  .  .  .  .  .  .  .  .  Data: 0
+1705  .  .  .  .  .  .  .  .  .  .  .  }
+1706  .  .  .  .  .  .  .  .  .  .  }
+1707  .  .  .  .  .  .  .  .  .  }
+1708  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+1709  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:86:10
+1710  .  .  .  .  .  .  .  .  .  .  Name: "error"
+1711  .  .  .  .  .  .  .  .  .  }
+1712  .  .  .  .  .  .  .  .  }
+1713  .  .  .  .  .  .  .  }
+1714  .  .  .  .  .  .  .  Rparen: -
+1715  .  .  .  .  .  .  }
+1716  .  .  .  .  .  }
+1717  .  .  .  .  .  1: *ast.IfStmt {
+1718  .  .  .  .  .  .  If: src/rulesConfig.go:87:2
+1719  .  .  .  .  .  .  Cond: *ast.BinaryExpr {
+1720  .  .  .  .  .  .  .  X: *ast.Ident {
+1721  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:87:5
+1722  .  .  .  .  .  .  .  .  Name: "ruleBase"
+1723  .  .  .  .  .  .  .  .  Obj: *(obj @ 547)
+1724  .  .  .  .  .  .  .  }
+1725  .  .  .  .  .  .  .  OpPos: src/rulesConfig.go:87:14
+1726  .  .  .  .  .  .  .  Op: ==
+1727  .  .  .  .  .  .  .  Y: *ast.Ident {
+1728  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:87:17
+1729  .  .  .  .  .  .  .  .  Name: "nil"
+1730  .  .  .  .  .  .  .  }
+1731  .  .  .  .  .  .  }
+1732  .  .  .  .  .  .  Body: *ast.BlockStmt {
+1733  .  .  .  .  .  .  .  Lbrace: src/rulesConfig.go:87:21
+1734  .  .  .  .  .  .  .  List: []ast.Stmt (len = 2) {
+1735  .  .  .  .  .  .  .  .  0: *ast.AssignStmt {
+1736  .  .  .  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+1737  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1738  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:88:3
+1739  .  .  .  .  .  .  .  .  .  .  .  Name: "err"
+1740  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1700)
+1741  .  .  .  .  .  .  .  .  .  .  }
+1742  .  .  .  .  .  .  .  .  .  }
+1743  .  .  .  .  .  .  .  .  .  TokPos: src/rulesConfig.go:88:7
+1744  .  .  .  .  .  .  .  .  .  Tok: =
+1745  .  .  .  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+1746  .  .  .  .  .  .  .  .  .  .  0: *ast.CallExpr {
+1747  .  .  .  .  .  .  .  .  .  .  .  Fun: *ast.Ident {
+1748  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:88:9
+1749  .  .  .  .  .  .  .  .  .  .  .  .  Name: "InitialRule"
+1750  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 886)
+1751  .  .  .  .  .  .  .  .  .  .  .  }
+1752  .  .  .  .  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:88:20
+1753  .  .  .  .  .  .  .  .  .  .  .  Ellipsis: -
+1754  .  .  .  .  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:88:21
+1755  .  .  .  .  .  .  .  .  .  .  }
+1756  .  .  .  .  .  .  .  .  .  }
+1757  .  .  .  .  .  .  .  .  }
+1758  .  .  .  .  .  .  .  .  1: *ast.IfStmt {
+1759  .  .  .  .  .  .  .  .  .  If: src/rulesConfig.go:89:3
+1760  .  .  .  .  .  .  .  .  .  Cond: *ast.BinaryExpr {
+1761  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+1762  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:89:6
+1763  .  .  .  .  .  .  .  .  .  .  .  Name: "err"
+1764  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1700)
+1765  .  .  .  .  .  .  .  .  .  .  }
+1766  .  .  .  .  .  .  .  .  .  .  OpPos: src/rulesConfig.go:89:10
+1767  .  .  .  .  .  .  .  .  .  .  Op: !=
+1768  .  .  .  .  .  .  .  .  .  .  Y: *ast.Ident {
+1769  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:89:13
+1770  .  .  .  .  .  .  .  .  .  .  .  Name: "nil"
+1771  .  .  .  .  .  .  .  .  .  .  }
+1772  .  .  .  .  .  .  .  .  .  }
+1773  .  .  .  .  .  .  .  .  .  Body: *ast.BlockStmt {
+1774  .  .  .  .  .  .  .  .  .  .  Lbrace: src/rulesConfig.go:89:17
+1775  .  .  .  .  .  .  .  .  .  .  List: []ast.Stmt (len = 1) {
+1776  .  .  .  .  .  .  .  .  .  .  .  0: *ast.ExprStmt {
+1777  .  .  .  .  .  .  .  .  .  .  .  .  X: *ast.CallExpr {
+1778  .  .  .  .  .  .  .  .  .  .  .  .  .  Fun: *ast.SelectorExpr {
+1779  .  .  .  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+1780  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:90:4
+1781  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "fmt"
+1782  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1783  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+1784  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:90:8
+1785  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "Printf"
+1786  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1787  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1788  .  .  .  .  .  .  .  .  .  .  .  .  .  Lparen: src/rulesConfig.go:90:14
+1789  .  .  .  .  .  .  .  .  .  .  .  .  .  Args: []ast.Expr (len = 2) {
+1790  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+1791  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ValuePos: src/rulesConfig.go:90:15
+1792  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+1793  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Value: "\"InitialRule err=%v\""
+1794  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1795  .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: *ast.Ident {
+1796  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:90:37
+1797  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "err"
+1798  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1700)
+1799  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1800  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+1801  .  .  .  .  .  .  .  .  .  .  .  .  .  Ellipsis: -
+1802  .  .  .  .  .  .  .  .  .  .  .  .  .  Rparen: src/rulesConfig.go:90:40
+1803  .  .  .  .  .  .  .  .  .  .  .  .  }
+1804  .  .  .  .  .  .  .  .  .  .  .  }
+1805  .  .  .  .  .  .  .  .  .  .  }
+1806  .  .  .  .  .  .  .  .  .  .  Rbrace: src/rulesConfig.go:91:3
+1807  .  .  .  .  .  .  .  .  .  }
+1808  .  .  .  .  .  .  .  .  }
+1809  .  .  .  .  .  .  .  }
+1810  .  .  .  .  .  .  .  Rbrace: src/rulesConfig.go:92:2
+1811  .  .  .  .  .  .  }
+1812  .  .  .  .  .  }
+1813  .  .  .  .  .  2: *ast.AssignStmt {
+1814  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+1815  .  .  .  .  .  .  .  0: *ast.Ident {
+1816  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:94:2
+1817  .  .  .  .  .  .  .  .  Name: "ruleScenarioResult"
+1818  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+1819  .  .  .  .  .  .  .  .  .  Kind: var
+1820  .  .  .  .  .  .  .  .  .  Name: "ruleScenarioResult"
+1821  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 1813)
+1822  .  .  .  .  .  .  .  .  }
+1823  .  .  .  .  .  .  .  }
+1824  .  .  .  .  .  .  }
+1825  .  .  .  .  .  .  TokPos: src/rulesConfig.go:94:21
+1826  .  .  .  .  .  .  Tok: :=
+1827  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+1828  .  .  .  .  .  .  .  0: *ast.CompositeLit {
+1829  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+1830  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:94:24
+1831  .  .  .  .  .  .  .  .  .  Name: "RuleScenarioResult"
+1832  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 211)
+1833  .  .  .  .  .  .  .  .  }
+1834  .  .  .  .  .  .  .  .  Lbrace: src/rulesConfig.go:94:42
+1835  .  .  .  .  .  .  .  .  Rbrace: src/rulesConfig.go:94:43
+1836  .  .  .  .  .  .  .  }
+1837  .  .  .  .  .  .  }
+1838  .  .  .  .  .  }
+1839  .  .  .  .  .  3: *ast.IfStmt {
+1840  .  .  .  .  .  .  If: src/rulesConfig.go:95:2
+1841  .  .  .  .  .  .  Init: *ast.AssignStmt {
+1842  .  .  .  .  .  .  .  Lhs: []ast.Expr (len = 2) {
+1843  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1844  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:95:5
+1845  .  .  .  .  .  .  .  .  .  Name: "ruleScenario"
+1846  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+1847  .  .  .  .  .  .  .  .  .  .  Kind: var
+1848  .  .  .  .  .  .  .  .  .  .  Name: "ruleScenario"
+1849  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 1841)
+1850  .  .  .  .  .  .  .  .  .  }
+1851  .  .  .  .  .  .  .  .  }
+1852  .  .  .  .  .  .  .  .  1: *ast.Ident {
+1853  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:95:19
+1854  .  .  .  .  .  .  .  .  .  Name: "ok"
+1855  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+1856  .  .  .  .  .  .  .  .  .  .  Kind: var
+1857  .  .  .  .  .  .  .  .  .  .  Name: "ok"
+1858  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 1841)
+1859  .  .  .  .  .  .  .  .  .  }
+1860  .  .  .  .  .  .  .  .  }
+1861  .  .  .  .  .  .  .  }
+1862  .  .  .  .  .  .  .  TokPos: src/rulesConfig.go:95:22
+1863  .  .  .  .  .  .  .  Tok: :=
+1864  .  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+1865  .  .  .  .  .  .  .  .  0: *ast.IndexExpr {
+1866  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+1867  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:95:25
+1868  .  .  .  .  .  .  .  .  .  .  Name: "ruleBase"
+1869  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 547)
+1870  .  .  .  .  .  .  .  .  .  }
+1871  .  .  .  .  .  .  .  .  .  Lbrack: src/rulesConfig.go:95:33
+1872  .  .  .  .  .  .  .  .  .  Index: *ast.Ident {
+1873  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:95:34
+1874  .  .  .  .  .  .  .  .  .  .  Name: "condition"
+1875  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1650)
+1876  .  .  .  .  .  .  .  .  .  }
+1877  .  .  .  .  .  .  .  .  .  Rbrack: src/rulesConfig.go:95:43
+1878  .  .  .  .  .  .  .  .  }
+1879  .  .  .  .  .  .  .  }
+1880  .  .  .  .  .  .  }
+1881  .  .  .  .  .  .  Cond: *ast.Ident {
+1882  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:95:46
+1883  .  .  .  .  .  .  .  Name: "ok"
+1884  .  .  .  .  .  .  .  Obj: *(obj @ 1855)
+1885  .  .  .  .  .  .  }
+1886  .  .  .  .  .  .  Body: *ast.BlockStmt {
+1887  .  .  .  .  .  .  .  Lbrace: src/rulesConfig.go:95:49
+1888  .  .  .  .  .  .  .  List: []ast.Stmt (len = 1) {
+1889  .  .  .  .  .  .  .  .  0: *ast.AssignStmt {
+1890  .  .  .  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+1891  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1892  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:96:3
+1893  .  .  .  .  .  .  .  .  .  .  .  Name: "ruleScenarioResult"
+1894  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1818)
+1895  .  .  .  .  .  .  .  .  .  .  }
+1896  .  .  .  .  .  .  .  .  .  }
+1897  .  .  .  .  .  .  .  .  .  TokPos: src/rulesConfig.go:96:22
+1898  .  .  .  .  .  .  .  .  .  Tok: =
+1899  .  .  .  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+1900  .  .  .  .  .  .  .  .  .  .  0: *ast.SelectorExpr {
+1901  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+1902  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:96:24
+1903  .  .  .  .  .  .  .  .  .  .  .  .  Name: "ruleScenario"
+1904  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1846)
+1905  .  .  .  .  .  .  .  .  .  .  .  }
+1906  .  .  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+1907  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:96:37
+1908  .  .  .  .  .  .  .  .  .  .  .  .  Name: "RuleResult"
+1909  .  .  .  .  .  .  .  .  .  .  .  }
+1910  .  .  .  .  .  .  .  .  .  .  }
+1911  .  .  .  .  .  .  .  .  .  }
+1912  .  .  .  .  .  .  .  .  }
+1913  .  .  .  .  .  .  .  }
+1914  .  .  .  .  .  .  .  Rbrace: src/rulesConfig.go:97:2
+1915  .  .  .  .  .  .  }
+1916  .  .  .  .  .  .  Else: *ast.BlockStmt {
+1917  .  .  .  .  .  .  .  Lbrace: src/rulesConfig.go:97:9
+1918  .  .  .  .  .  .  .  List: []ast.Stmt (len = 8) {
+1919  .  .  .  .  .  .  .  .  0: *ast.AssignStmt {
+1920  .  .  .  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+1921  .  .  .  .  .  .  .  .  .  .  0: *ast.SelectorExpr {
+1922  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+1923  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:99:3
+1924  .  .  .  .  .  .  .  .  .  .  .  .  Name: "ruleScenarioResult"
+1925  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1818)
+1926  .  .  .  .  .  .  .  .  .  .  .  }
+1927  .  .  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+1928  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:99:22
+1929  .  .  .  .  .  .  .  .  .  .  .  .  Name: "ConditionName"
+1930  .  .  .  .  .  .  .  .  .  .  .  }
+1931  .  .  .  .  .  .  .  .  .  .  }
+1932  .  .  .  .  .  .  .  .  .  }
+1933  .  .  .  .  .  .  .  .  .  TokPos: src/rulesConfig.go:99:36
+1934  .  .  .  .  .  .  .  .  .  Tok: =
+1935  .  .  .  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+1936  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1937  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:99:38
+1938  .  .  .  .  .  .  .  .  .  .  .  Name: "DEFAULT_CONDITION_NAME"
+1939  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 582)
+1940  .  .  .  .  .  .  .  .  .  .  }
+1941  .  .  .  .  .  .  .  .  .  }
+1942  .  .  .  .  .  .  .  .  }
+1943  .  .  .  .  .  .  .  .  1: *ast.AssignStmt {
+1944  .  .  .  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+1945  .  .  .  .  .  .  .  .  .  .  0: *ast.SelectorExpr {
+1946  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+1947  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:100:3
+1948  .  .  .  .  .  .  .  .  .  .  .  .  Name: "ruleScenarioResult"
+1949  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1818)
+1950  .  .  .  .  .  .  .  .  .  .  .  }
+1951  .  .  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+1952  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:100:22
+1953  .  .  .  .  .  .  .  .  .  .  .  .  Name: "IsSharepointUpload"
+1954  .  .  .  .  .  .  .  .  .  .  .  }
+1955  .  .  .  .  .  .  .  .  .  .  }
+1956  .  .  .  .  .  .  .  .  .  }
+1957  .  .  .  .  .  .  .  .  .  TokPos: src/rulesConfig.go:100:41
+1958  .  .  .  .  .  .  .  .  .  Tok: =
+1959  .  .  .  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+1960  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1961  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:100:43
+1962  .  .  .  .  .  .  .  .  .  .  .  Name: "DEFAULT_IS_SHAREPOINT_UPLOAD"
+1963  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 614)
+1964  .  .  .  .  .  .  .  .  .  .  }
+1965  .  .  .  .  .  .  .  .  .  }
+1966  .  .  .  .  .  .  .  .  }
+1967  .  .  .  .  .  .  .  .  2: *ast.AssignStmt {
+1968  .  .  .  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+1969  .  .  .  .  .  .  .  .  .  .  0: *ast.SelectorExpr {
+1970  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+1971  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:101:3
+1972  .  .  .  .  .  .  .  .  .  .  .  .  Name: "ruleScenarioResult"
+1973  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1818)
+1974  .  .  .  .  .  .  .  .  .  .  .  }
+1975  .  .  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+1976  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:101:22
+1977  .  .  .  .  .  .  .  .  .  .  .  .  Name: "IsEFormGenerate"
+1978  .  .  .  .  .  .  .  .  .  .  .  }
+1979  .  .  .  .  .  .  .  .  .  .  }
+1980  .  .  .  .  .  .  .  .  .  }
+1981  .  .  .  .  .  .  .  .  .  TokPos: src/rulesConfig.go:101:38
+1982  .  .  .  .  .  .  .  .  .  Tok: =
+1983  .  .  .  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+1984  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+1985  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:101:40
+1986  .  .  .  .  .  .  .  .  .  .  .  Name: "DEFAULT_IS_EFORM_GEN"
+1987  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 646)
+1988  .  .  .  .  .  .  .  .  .  .  }
+1989  .  .  .  .  .  .  .  .  .  }
+1990  .  .  .  .  .  .  .  .  }
+1991  .  .  .  .  .  .  .  .  3: *ast.AssignStmt {
+1992  .  .  .  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+1993  .  .  .  .  .  .  .  .  .  .  0: *ast.SelectorExpr {
+1994  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+1995  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:102:3
+1996  .  .  .  .  .  .  .  .  .  .  .  .  Name: "ruleScenarioResult"
+1997  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1818)
+1998  .  .  .  .  .  .  .  .  .  .  .  }
+1999  .  .  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+2000  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:102:22
+2001  .  .  .  .  .  .  .  .  .  .  .  .  Name: "IsShortFormGenerate"
+2002  .  .  .  .  .  .  .  .  .  .  .  }
+2003  .  .  .  .  .  .  .  .  .  .  }
+2004  .  .  .  .  .  .  .  .  .  }
+2005  .  .  .  .  .  .  .  .  .  TokPos: src/rulesConfig.go:102:42
+2006  .  .  .  .  .  .  .  .  .  Tok: =
+2007  .  .  .  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+2008  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+2009  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:102:44
+2010  .  .  .  .  .  .  .  .  .  .  .  Name: "DEFAULT_IS_SHORT_FORM_GEN"
+2011  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 678)
+2012  .  .  .  .  .  .  .  .  .  .  }
+2013  .  .  .  .  .  .  .  .  .  }
+2014  .  .  .  .  .  .  .  .  }
+2015  .  .  .  .  .  .  .  .  4: *ast.AssignStmt {
+2016  .  .  .  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+2017  .  .  .  .  .  .  .  .  .  .  0: *ast.SelectorExpr {
+2018  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+2019  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:103:3
+2020  .  .  .  .  .  .  .  .  .  .  .  .  Name: "ruleScenarioResult"
+2021  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1818)
+2022  .  .  .  .  .  .  .  .  .  .  .  }
+2023  .  .  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+2024  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:103:22
+2025  .  .  .  .  .  .  .  .  .  .  .  .  Name: "IsAttachmentGenerate"
+2026  .  .  .  .  .  .  .  .  .  .  .  }
+2027  .  .  .  .  .  .  .  .  .  .  }
+2028  .  .  .  .  .  .  .  .  .  }
+2029  .  .  .  .  .  .  .  .  .  TokPos: src/rulesConfig.go:103:43
+2030  .  .  .  .  .  .  .  .  .  Tok: =
+2031  .  .  .  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+2032  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+2033  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:103:45
+2034  .  .  .  .  .  .  .  .  .  .  .  Name: "DEFAULT_IS_ATTACHMENT_GEN"
+2035  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 710)
+2036  .  .  .  .  .  .  .  .  .  .  }
+2037  .  .  .  .  .  .  .  .  .  }
+2038  .  .  .  .  .  .  .  .  }
+2039  .  .  .  .  .  .  .  .  5: *ast.AssignStmt {
+2040  .  .  .  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+2041  .  .  .  .  .  .  .  .  .  .  0: *ast.SelectorExpr {
+2042  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+2043  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:104:3
+2044  .  .  .  .  .  .  .  .  .  .  .  .  Name: "ruleScenarioResult"
+2045  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1818)
+2046  .  .  .  .  .  .  .  .  .  .  .  }
+2047  .  .  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+2048  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:104:22
+2049  .  .  .  .  .  .  .  .  .  .  .  .  Name: "IsWarningMessage"
+2050  .  .  .  .  .  .  .  .  .  .  .  }
+2051  .  .  .  .  .  .  .  .  .  .  }
+2052  .  .  .  .  .  .  .  .  .  }
+2053  .  .  .  .  .  .  .  .  .  TokPos: src/rulesConfig.go:104:39
+2054  .  .  .  .  .  .  .  .  .  Tok: =
+2055  .  .  .  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+2056  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+2057  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:104:41
+2058  .  .  .  .  .  .  .  .  .  .  .  Name: "DEFAULT_IS_WARNING_MESSAGE"
+2059  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 742)
+2060  .  .  .  .  .  .  .  .  .  .  }
+2061  .  .  .  .  .  .  .  .  .  }
+2062  .  .  .  .  .  .  .  .  }
+2063  .  .  .  .  .  .  .  .  6: *ast.AssignStmt {
+2064  .  .  .  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+2065  .  .  .  .  .  .  .  .  .  .  0: *ast.SelectorExpr {
+2066  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+2067  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:105:3
+2068  .  .  .  .  .  .  .  .  .  .  .  .  Name: "ruleScenarioResult"
+2069  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1818)
+2070  .  .  .  .  .  .  .  .  .  .  .  }
+2071  .  .  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+2072  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:105:22
+2073  .  .  .  .  .  .  .  .  .  .  .  .  Name: "WarningMessage"
+2074  .  .  .  .  .  .  .  .  .  .  .  }
+2075  .  .  .  .  .  .  .  .  .  .  }
+2076  .  .  .  .  .  .  .  .  .  }
+2077  .  .  .  .  .  .  .  .  .  TokPos: src/rulesConfig.go:105:37
+2078  .  .  .  .  .  .  .  .  .  Tok: =
+2079  .  .  .  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+2080  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+2081  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:105:39
+2082  .  .  .  .  .  .  .  .  .  .  .  Name: "DEFAULT_WARNING_MESSAGE"
+2083  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 774)
+2084  .  .  .  .  .  .  .  .  .  .  }
+2085  .  .  .  .  .  .  .  .  .  }
+2086  .  .  .  .  .  .  .  .  }
+2087  .  .  .  .  .  .  .  .  7: *ast.AssignStmt {
+2088  .  .  .  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+2089  .  .  .  .  .  .  .  .  .  .  0: *ast.SelectorExpr {
+2090  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+2091  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:106:3
+2092  .  .  .  .  .  .  .  .  .  .  .  .  Name: "ruleScenarioResult"
+2093  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 1818)
+2094  .  .  .  .  .  .  .  .  .  .  .  }
+2095  .  .  .  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+2096  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:106:22
+2097  .  .  .  .  .  .  .  .  .  .  .  .  Name: "IsContactItemEForm"
+2098  .  .  .  .  .  .  .  .  .  .  .  }
+2099  .  .  .  .  .  .  .  .  .  .  }
+2100  .  .  .  .  .  .  .  .  .  }
+2101  .  .  .  .  .  .  .  .  .  TokPos: src/rulesConfig.go:106:41
+2102  .  .  .  .  .  .  .  .  .  Tok: =
+2103  .  .  .  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+2104  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+2105  .  .  .  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:106:43
+2106  .  .  .  .  .  .  .  .  .  .  .  Name: "DEFAULT_IS_CONTACT_ITEM_EFORM"
+2107  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 806)
+2108  .  .  .  .  .  .  .  .  .  .  }
+2109  .  .  .  .  .  .  .  .  .  }
+2110  .  .  .  .  .  .  .  .  }
+2111  .  .  .  .  .  .  .  }
+2112  .  .  .  .  .  .  .  Rbrace: src/rulesConfig.go:107:2
+2113  .  .  .  .  .  .  }
+2114  .  .  .  .  .  }
+2115  .  .  .  .  .  4: *ast.ReturnStmt {
+2116  .  .  .  .  .  .  Return: src/rulesConfig.go:109:2
+2117  .  .  .  .  .  .  Results: []ast.Expr (len = 2) {
+2118  .  .  .  .  .  .  .  0: *ast.Ident {
+2119  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:109:9
+2120  .  .  .  .  .  .  .  .  Name: "ruleScenarioResult"
+2121  .  .  .  .  .  .  .  .  Obj: *(obj @ 1818)
+2122  .  .  .  .  .  .  .  }
+2123  .  .  .  .  .  .  .  1: *ast.Ident {
+2124  .  .  .  .  .  .  .  .  NamePos: src/rulesConfig.go:109:29
+2125  .  .  .  .  .  .  .  .  Name: "err"
+2126  .  .  .  .  .  .  .  .  Obj: *(obj @ 1700)
+2127  .  .  .  .  .  .  .  }
+2128  .  .  .  .  .  .  }
+2129  .  .  .  .  .  }
+2130  .  .  .  .  }
+2131  .  .  .  .  Rbrace: src/rulesConfig.go:110:1
+2132  .  .  .  }
+2133  .  .  }
+2134  .  .  11: *(obj @ 936)
+2135  .  }
+2136  .  Scope: *ast.Scope {
+2137  .  .  Objects: map[string]*ast.Object (len = 18) {
+2138  .  .  .  "DEFAULT_IS_EFORM_GEN": *(obj @ 646)
+2139  .  .  .  "DEFAULT_IS_SHORT_FORM_GEN": *(obj @ 678)
+2140  .  .  .  "DEFAULT_IS_WARNING_MESSAGE": *(obj @ 742)
+2141  .  .  .  "url": *(obj @ 846)
+2142  .  .  .  "ListRuleScenario": *(obj @ 491)
+2143  .  .  .  "RuleScenarioResult": *(obj @ 211)
+2144  .  .  .  "DEFAULT_IS_ATTACHMENT_GEN": *(obj @ 710)
+2145  .  .  .  "checkDuplicateRule": *(obj @ 1411)
+2146  .  .  .  "GetRules": *(obj @ 1634)
+2147  .  .  .  "RuleScenarioCondition": *(obj @ 72)
+2148  .  .  .  "RuleScenario": *(obj @ 416)
+2149  .  .  .  "DEFAULT_CONDITION_NAME": *(obj @ 582)
+2150  .  .  .  "DEFAULT_IS_SHAREPOINT_UPLOAD": *(obj @ 614)
+2151  .  .  .  "DEFAULT_WARNING_MESSAGE": *(obj @ 774)
+2152  .  .  .  "DEFAULT_IS_CONTACT_ITEM_EFORM": *(obj @ 806)
+2153  .  .  .  "InitialRule": *(obj @ 886)
+2154  .  .  .  "getFileLocation": *(obj @ 933)
+2155  .  .  .  "ruleBase": *(obj @ 547)
+2156  .  .  }
+2157  .  }
+2158  .  Imports: []*ast.ImportSpec (len = 6) {
+2159  .  .  0: *(obj @ 12)
+2160  .  .  1: *(obj @ 20)
+2161  .  .  2: *(obj @ 28)
+2162  .  .  3: *(obj @ 36)
+2163  .  .  4: *(obj @ 44)
+2164  .  .  5: *(obj @ 52)
+2165  .  }
+2166  .  Unresolved: []*ast.Ident (len = 44) {
+2167  .  .  0: *(obj @ 95)
+2168  .  .  1: *(obj @ 117)
+2169  .  .  2: *(obj @ 139)
+2170  .  .  3: *(obj @ 161)
+2171  .  .  4: *(obj @ 183)
+2172  .  .  5: *(obj @ 234)
+2173  .  .  6: *(obj @ 256)
+2174  .  .  7: *(obj @ 278)
+2175  .  .  8: *(obj @ 300)
+2176  .  .  9: *(obj @ 322)
+2177  .  .  10: *(obj @ 344)
+2178  .  .  11: *(obj @ 366)
+2179  .  .  12: *(obj @ 388)
+2180  .  .  13: *(obj @ 592)
+2181  .  .  14: *(obj @ 624)
+2182  .  .  15: *(obj @ 656)
+2183  .  .  16: *(obj @ 688)
+2184  .  .  17: *(obj @ 720)
+2185  .  .  18: *(obj @ 752)
+2186  .  .  19: *(obj @ 784)
+2187  .  .  20: *(obj @ 816)
+2188  .  .  21: *(obj @ 857)
+2189  .  .  22: *(obj @ 902)
+2190  .  .  23: *(obj @ 1075)
+2191  .  .  24: *(obj @ 1107)
+2192  .  .  25: *(obj @ 1118)
+2193  .  .  26: *(obj @ 1164)
+2194  .  .  27: *(obj @ 1194)
+2195  .  .  28: *(obj @ 1231)
+2196  .  .  29: *(obj @ 1242)
+2197  .  .  30: *(obj @ 1284)
+2198  .  .  31: *(obj @ 1490)
+2199  .  .  32: *(obj @ 1506)
+2200  .  .  33: *(obj @ 1524)
+2201  .  .  34: *(obj @ 1556)
+2202  .  .  35: *(obj @ 1677)
+2203  .  .  36: *(obj @ 1708)
+2204  .  .  37: *(obj @ 1727)
+2205  .  .  38: *(obj @ 1768)
+2206  .  .  39: *(obj @ 1779)
+2207  .  .  40: *(obj @ 959)
+2208  .  .  41: *(obj @ 971)
+2209  .  .  42: *(obj @ 989)
+2210  .  .  43: *(obj @ 1012)
+2211  .  }
+2212  }
