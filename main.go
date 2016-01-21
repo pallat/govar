@@ -28,7 +28,7 @@ func (v *visitor) Visit(node ast.Node) (w ast.Visitor) {
 						case *ast.SelectorExpr:
 							switch value.(*ast.CallExpr).Fun.(*ast.SelectorExpr).X.(type) {
 							case *ast.Ident:
-								if value.(*ast.CallExpr).Fun.(*ast.SelectorExpr).X.(*ast.Ident).Name == "conf" {
+								if value.(*ast.CallExpr).Fun.(*ast.SelectorExpr).X.(*ast.Ident).Name == pack {
 									fmt.Println(v.fn, " : ", value.(*ast.CallExpr).Args[0].(*ast.BasicLit).Value)
 								}
 							}
@@ -37,11 +37,6 @@ func (v *visitor) Visit(node ast.Node) (w ast.Visitor) {
 				}
 			}
 		}
-		// case *ast.SelectorExpr:
-		// 	if t.X.(*ast.Ident).Name == "conf" {
-		// 		fmt.Printf(">> %# v\n", t.X)
-		// 		fmt.Printf(">> %# v\n", t.Sel)
-		// 	}
 	}
 
 	return v
@@ -57,9 +52,11 @@ func walk(path string, info os.FileInfo, err error) error {
 }
 
 var root string
+var pack string
 
 func init() {
 	flag.StringVar(&root, "root", ".", "-root=/")
+	flag.StringVar(&pack, "pack", "conf", "-pack=conf")
 }
 
 func main() {
